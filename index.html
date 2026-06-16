@@ -291,27 +291,18 @@
   .gal-tab:hover{border-color:var(--accent);color:var(--ink);}
   .gal-tab.active{background:var(--accent);border-color:var(--accent);color:#fff;}
   .gal-tab .cnt{display:inline-block;margin-left:7px;padding:1px 7px;border-radius:20px;background:color-mix(in srgb,currentColor 16%,transparent);font-size:11px;}
-  .gal-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px;}
+  .gal-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px;}
   .gal-year-label{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;}
   .gal-year-label small{font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.05em;margin-left:12px;}
-  .uploader{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:13px;padding:11px 18px;border:1px solid var(--accent);border-radius:7px;color:var(--accent);cursor:pointer;transition:background .2s,color .2s;background:transparent;}
-  .uploader:hover{background:var(--accent);color:#fff;}
-  .uploader input{display:none;}
   .gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
   .gal-tile{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper-2);aspect-ratio:4/3;cursor:zoom-in;}
   .gal-tile img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
   .gal-tile:hover img{transform:scale(1.05);}
   .gal-cap{position:absolute;left:0;right:0;bottom:0;padding:20px 12px 10px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.74));opacity:0;transition:opacity .25s;pointer-events:none;}
   .gal-tile:hover .gal-cap{opacity:1;}
-  .gal-del{position:absolute;top:8px;right:8px;width:28px;height:28px;border:none;border-radius:6px;background:rgba(0,0,0,.55);color:#fff;cursor:pointer;display:none;place-items:center;font-size:17px;line-height:1;}
-  .gal-tile.user:hover .gal-del{display:grid;}
-  .gal-empty{border:1.5px dashed var(--line);border-radius:12px;padding:clamp(40px,7vw,64px) 24px;text-align:center;color:var(--muted);transition:border-color .2s,background .2s;}
-  .gal-empty.drag{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,transparent);}
+  .gal-empty{border:1.5px dashed var(--line);border-radius:12px;padding:clamp(40px,7vw,64px) 24px;text-align:center;color:var(--muted);}
   .gal-empty h4{font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--ink);margin:0 0 7px;letter-spacing:-.01em;}
   .gal-empty p{margin:0;font-size:14px;}
-  .gal-note{font-family:var(--font-mono);font-size:11.5px;color:var(--muted);margin-top:20px;line-height:1.8;max-width:80ch;}
-  .gal-note code{background:var(--paper-2);border:1px solid var(--line-soft);border-radius:4px;padding:1px 6px;}
-
   /* lightbox */
   .lb{position:fixed;inset:0;z-index:120;background:rgba(8,9,12,.93);display:none;align-items:center;justify-content:center;padding:24px;}
   .lb.open{display:flex;}
@@ -673,22 +664,14 @@
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">F.07</span> Project Gallery</div>
     <h2 class="sec reveal">Site &amp; project photos, by year</h2>
-    <p class="lead reveal" style="margin-bottom:34px">A growing visual record of work on the ground. Choose a year, then add photos straight from your device — drag and drop works too.</p>
+    <p class="lead reveal" style="margin-bottom:34px">A visual record of site visits, construction progress, and fieldwork — organised by year. Click any photo to enlarge.</p>
 
     <div class="reveal">
       <div class="gal-tabs" id="galTabs" role="tablist" aria-label="Select year"></div>
       <div class="gal-toolbar">
         <div class="gal-year-label" id="galYearLabel"></div>
-        <label class="uploader">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-          Add photos
-          <input type="file" id="galInput" accept="image/*" multiple />
-        </label>
       </div>
       <div id="galStage"></div>
-      <p class="gal-note">
-        Photos you add show up instantly and are saved in this browser. To publish them so every visitor to your live site sees them, place the image files next to <code>index.html</code> (for example in <code>images/2024/</code>) and list them in the <code>GALLERY</code> block near the bottom of this file.
-      </p>
     </div>
   </div>
 </section>
@@ -828,13 +811,15 @@
   "use strict";
 
   /* =====================================================================
-     EDIT HERE to publish permanent photos on your live site.
-     Put image files next to index.html and list them, for example:
-       "2024":[
-         {src:"images/2024/slab.jpg",  caption:"Slab works, Block A"},
-         {src:"images/2024/column.jpg",caption:"Column reinforcement check"}
-       ]
-     Anything you upload in the browser is layered on top of these.
+     HOW TO ADD YOUR PHOTOS (only you do this — visitors only view):
+     1. On your computer, create:  images/2025/   images/2024/  etc.
+     2. Put your photo files in those folders.
+     3. List them below. Example:
+          "2025":[
+            {src:"images/2025/foundation.jpg", caption:"Foundation works, Nuwakot"},
+            {src:"images/2025/columns.jpg",    caption:"Column reinforcement check"}
+          ],
+     4. Upload the updated index.html AND your images/ folder to GitHub.
      ===================================================================== */
   var GALLERY={
     "2025":[],
@@ -846,124 +831,68 @@
   var YEARS=Object.keys(GALLERY).sort(function(a,b){return Number(b)-Number(a);});
   var tabsEl=document.getElementById("galTabs"),
       stage=document.getElementById("galStage"),
-      label=document.getElementById("galYearLabel"),
-      input=document.getElementById("galInput"),
-      noteEl=document.querySelector(".gal-note");
+      label=document.getElementById("galYearLabel");
   if(!tabsEl) return;
 
-  var current=YEARS[0], user={};
-
-  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
-  function fixedNote(){ if(noteEl) noteEl.dataset.base=noteEl.innerHTML; }
-  function tempNote(msg){ if(noteEl) noteEl.textContent=msg; }
-
-  function load(){
-    YEARS.forEach(function(y){
-      var arr=[];
-      try{var raw=localStorage.getItem("sa-gallery-"+y); if(raw) arr=JSON.parse(raw)||[];}catch(e){}
-      user[y]=arr;
-    });
-  }
-  function save(y){
-    try{ localStorage.setItem("sa-gallery-"+y,JSON.stringify(user[y])); }
-    catch(e){ tempNote("Heads up: your browser storage is full, so these photos are kept for this session only. Add the files to your site to keep them permanently."); }
-  }
-  function items(y){
-    var base=(GALLERY[y]||[]).map(function(p){return {src:p.src,caption:p.caption||"",user:false};});
-    var us=(user[y]||[]).map(function(p){return {src:p.src,caption:p.caption||"",user:true};});
-    return base.concat(us);
-  }
+  var current=YEARS[0];
 
   function renderTabs(){
     tabsEl.innerHTML="";
     YEARS.forEach(function(y){
-      var n=items(y).length;
+      var n=(GALLERY[y]||[]).length;
       var b=document.createElement("button");
       b.className="gal-tab"+(y===current?" active":"");
       b.setAttribute("role","tab");
       b.setAttribute("aria-selected",y===current?"true":"false");
-      b.innerHTML=y+(n?'<span class="cnt">'+n+'</span>':'');
+      b.innerHTML=y+(n?'<span class="cnt">'+n+'</span>':'')+'';
       b.addEventListener("click",function(){current=y;renderTabs();renderStage();});
       tabsEl.appendChild(b);
     });
   }
 
   function renderStage(){
-    var list=items(current);
+    var list=GALLERY[current]||[];
     label.innerHTML=current+' <small>'+list.length+' photo'+(list.length===1?'':'s')+'</small>';
     if(!list.length){
-      stage.innerHTML='<div class="gal-empty" id="galDrop"><h4>No photos for '+current+' yet</h4><p>Click &ldquo;Add photos&rdquo;, or drag image files here.</p></div>';
+      stage.innerHTML='<div class="gal-empty"><h4>Photos coming soon</h4><p>Site and project photos for '+current+' will appear here.</p></div>';
       return;
     }
-    var grid=document.createElement("div");grid.className="gal-grid";
-    var baseCount=(GALLERY[current]||[]).length;
+    var grid=document.createElement("div");
+    grid.className="gal-grid";
     list.forEach(function(it,i){
       var t=document.createElement("div");
-      t.className="gal-tile"+(it.user?" user":"");
-      t.innerHTML='<img src="'+it.src+'" alt="Project photo, '+current+'" loading="lazy" />'+
-                  (it.caption?'<div class="gal-cap">'+esc(it.caption)+'</div>':'')+
-                  (it.user?'<button class="gal-del" aria-label="Remove photo">&times;</button>':'');
+      t.className="gal-tile";
+      t.innerHTML='<img src="'+it.src+'" alt="'+(it.caption||'Project photo, '+current)+'" loading="lazy" />'+
+                  (it.caption?'<div class="gal-cap">'+it.caption+'</div>':'')+'';
       t.querySelector("img").addEventListener("click",function(){openLB(list,i);});
-      if(it.user){
-        t.querySelector(".gal-del").addEventListener("click",function(e){
-          e.stopPropagation();
-          var ui=i-baseCount;
-          if(ui>=0){ user[current].splice(ui,1); save(current); renderTabs(); renderStage(); }
-        });
-      }
       grid.appendChild(t);
     });
-    stage.innerHTML="";stage.appendChild(grid);
+    stage.innerHTML="";
+    stage.appendChild(grid);
   }
 
-  function addFiles(files){
-    var imgs=Array.prototype.filter.call(files||[],function(f){return /^image\//.test(f.type);});
-    if(!imgs.length) return;
-    var pending=imgs.length;
-    imgs.forEach(function(f){
-      var r=new FileReader();
-      r.onload=function(){
-        user[current].push({src:r.result,caption:f.name.replace(/\.[^.]+$/,"")});
-        if(--pending===0){ save(current); renderTabs(); renderStage(); }
-      };
-      r.readAsDataURL(f);
-    });
-  }
-
-  input.addEventListener("change",function(){ addFiles(this.files); this.value=""; });
-
-  /* drag & drop anywhere on the stage */
-  ["dragenter","dragover"].forEach(function(ev){
-    stage.addEventListener(ev,function(e){e.preventDefault();var d=document.getElementById("galDrop");if(d)d.classList.add("drag");});
-  });
-  ["dragleave"].forEach(function(ev){
-    stage.addEventListener(ev,function(e){var d=document.getElementById("galDrop");if(d)d.classList.remove("drag");});
-  });
-  stage.addEventListener("drop",function(e){
-    e.preventDefault();
-    var d=document.getElementById("galDrop");if(d)d.classList.remove("drag");
-    addFiles(e.dataTransfer.files);
-  });
-
-  /* ---- lightbox ---- */
-  var lb=document.getElementById("lb"),lbImg=document.getElementById("lbImg"),lbCap=document.getElementById("lbCap");
+  /* ---- lightbox (click any photo to enlarge) ---- */
+  var lb=document.getElementById("lb"),
+      lbImg=document.getElementById("lbImg"),
+      lbCap=document.getElementById("lbCap");
   var lbList=[],lbIdx=0;
-  function openLB(list,i){ lbList=list; lbIdx=i; showLB(); lb.classList.add("open"); document.body.style.overflow="hidden"; }
-  function showLB(){ var it=lbList[lbIdx]; lbImg.src=it.src; lbCap.textContent=it.caption||""; }
-  function closeLB(){ lb.classList.remove("open"); document.body.style.overflow=""; lbImg.src=""; }
-  function navLB(d){ lbIdx=(lbIdx+d+lbList.length)%lbList.length; showLB(); }
+  function openLB(list,i){lbList=list;lbIdx=i;showLB();lb.classList.add("open");document.body.style.overflow="hidden";}
+  function showLB(){var it=lbList[lbIdx];lbImg.src=it.src;lbCap.textContent=it.caption||"";}
+  function closeLB(){lb.classList.remove("open");document.body.style.overflow="";lbImg.src="";}
+  function navLB(d){lbIdx=(lbIdx+d+lbList.length)%lbList.length;showLB();}
   document.getElementById("lbClose").addEventListener("click",closeLB);
   document.getElementById("lbPrev").addEventListener("click",function(e){e.stopPropagation();navLB(-1);});
   document.getElementById("lbNext").addEventListener("click",function(e){e.stopPropagation();navLB(1);});
-  lb.addEventListener("click",function(e){ if(e.target===lb) closeLB(); });
+  lb.addEventListener("click",function(e){if(e.target===lb)closeLB();});
   document.addEventListener("keydown",function(e){
-    if(!lb.classList.contains("open")) return;
-    if(e.key==="Escape") closeLB();
-    else if(e.key==="ArrowLeft") navLB(-1);
-    else if(e.key==="ArrowRight") navLB(1);
+    if(!lb.classList.contains("open"))return;
+    if(e.key==="Escape")closeLB();
+    else if(e.key==="ArrowLeft")navLB(-1);
+    else if(e.key==="ArrowRight")navLB(1);
   });
 
-  fixedNote(); load(); renderTabs(); renderStage();
+  renderTabs();
+  renderStage();
 })();
 </script>
 
