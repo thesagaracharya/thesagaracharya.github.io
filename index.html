@@ -311,6 +311,8 @@
   .gal-empty{border:1.5px dashed var(--line);border-radius:12px;padding:clamp(40px,7vw,64px) 24px;text-align:center;color:var(--muted);}
   .gal-empty h4{font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--ink);margin:0 0 7px;letter-spacing:-.01em;}
   .gal-empty p{margin:0;font-size:14px;}
+  .gal-album-desc{background:var(--paper-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:24px;font-size:14.5px;color:var(--graphite);line-height:1.75;}
+
   /* lightbox */
   .lb{position:fixed;inset:0;z-index:120;background:rgba(8,9,12,.93);display:none;align-items:center;justify-content:center;padding:24px;}
   .lb.open{display:flex;}
@@ -842,29 +844,39 @@
       {src:"images/2025/susta-enbankment.jpg", caption:"Susta Embankment"}
     ],
     "2024":{
-      "FIDIC Asia Pacific Conference Nepal 2024":[
-        {src:"conference-overview.jpg",      caption:"FIDIC Asia Pacific Conference 2024 \u2014 Governance for Climate Shocks \u00b7 Hyatt Regency, Kathmandu"},
-        {src:"distinguished-delegates.jpg",  caption:"With FIDIC President Er. Catherine Karakatsanis and distinguished delegates from across the Asia Pacific region"},
-        {src:"FIDIC-President.jpg",          caption:"With FIDIC President Er. Catherine Karakatsanis \u2014 a privilege to exchange ideas on climate governance and resilient infrastructure"},
-        {src:"national-networking.jpg",      caption:"Panel session with national delegates, scholars, and consulting professionals \u00b7 FIDIC Asia Pacific 2024"}
-      ]
+      "FIDIC Asia Pacific Conference Nepal 2024":{
+        description:"Participated in the FIDIC Asia Pacific Conference Nepal 2024, themed \u201cGovernance for Climate Shocks,\u201d engaging with international experts and engineering professionals on climate resilience, sustainable infrastructure, disaster risk management, and governance strategies. The conference provided a platform for knowledge exchange, professional networking, and exploring innovative solutions for climate-adaptive infrastructure development across the Asia-Pacific region.",
+        photos:[
+          {src:"conference-overview.jpg",      caption:"FIDIC Asia Pacific Conference 2024 \u2014 Governance for Climate Shocks \u00b7 Hyatt Regency, Kathmandu"},
+          {src:"distinguished-delegates.jpg",  caption:"With FIDIC President Er. Catherine Karakatsanis and distinguished delegates from across the Asia Pacific region"},
+          {src:"FIDIC-President.jpg",          caption:"With FIDIC President Er. Catherine Karakatsanis \u2014 a privilege to exchange ideas on climate governance and resilient infrastructure"},
+          {src:"national-networking.jpg",      caption:"Panel session with national delegates, scholars, and consulting professionals \u00b7 FIDIC Asia Pacific 2024"}
+        ]
+      }
     },
     "2023":[],
     "2022":[]
   };
 
-  /* helpers */
-  function isAlbum(y){ var v=GALLERY[y]; return v && !Array.isArray(v) && typeof v==="object"; }
+  /* helpers — albums support two shapes:
+     array  → plain list of photos, no description
+     object → { description:"...", photos:[...] }   ← use this for albums with a note */
+  function isAlbum(y){ var v=GALLERY[y]; return v&&!Array.isArray(v)&&typeof v==="object"; }
   function albumKeys(y){ return isAlbum(y)?Object.keys(GALLERY[y]):[]; }
-  function totalCount(y){
-    if(isAlbum(y)){
-      return albumKeys(y).reduce(function(s,k){return s+(GALLERY[y][k]||[]).length;},0);
-    }
-    return (GALLERY[y]||[]).length;
+  function albumPhotos(y,album){
+    if(!isAlbum(y)) return GALLERY[y]||[];
+    var entry=GALLERY[y][album];
+    if(!entry) return [];
+    return Array.isArray(entry)?entry:(entry.photos||[]);
   }
-  function getPhotos(y,album){
-    if(isAlbum(y)) return (album&&GALLERY[y][album])||[];
-    return GALLERY[y]||[];
+  function albumDesc(y,album){
+    if(!isAlbum(y)) return null;
+    var entry=GALLERY[y][album];
+    return (entry&&!Array.isArray(entry))?entry.description||null:null;
+  }
+  function totalCount(y){
+    if(isAlbum(y)) return albumKeys(y).reduce(function(s,k){return s+albumPhotos(y,k).length;},0);
+    return (GALLERY[y]||[]).length;
   }
 
   var YEARS=Object.keys(GALLERY).sort(function(a,b){return Number(b)-Number(a);});
@@ -901,7 +913,7 @@
     if(!albums.length){ albumBar.classList.remove("visible"); return; }
     albumBar.classList.add("visible");
     albums.forEach(function(album){
-      var n=(GALLERY[curYear][album]||[]).length;
+      var n=albumPhotos(curYear,album).length;
       var b=document.createElement("button");
       b.className="gal-album-tab"+(album===curAlbum?" active":"");
       b.setAttribute("role","tab");
@@ -915,11 +927,22 @@
   }
 
   function renderStage(){
-    var list=getPhotos(curYear,curAlbum);
+    var list=albumPhotos(curYear,curAlbum);
+    var desc=albumDesc(curYear,curAlbum);
     var heading=curAlbum||curYear;
     label.innerHTML=heading+' <small>'+list.length+' photo'+(list.length===1?'':'s')+'</small>';
+    stage.innerHTML="";
+    if(desc){
+      var d=document.createElement("p");
+      d.className="gal-album-desc";
+      d.textContent=desc;
+      stage.appendChild(d);
+    }
     if(!list.length){
-      stage.innerHTML='<div class="gal-empty"><h4>Photos coming soon</h4><p>Photos for '+(curAlbum||curYear)+' will appear here.</p></div>';
+      var empty=document.createElement("div");
+      empty.className="gal-empty";
+      empty.innerHTML='<h4>Photos coming soon</h4><p>Photos for '+(curAlbum||curYear)+' will appear here.</p>';
+      stage.appendChild(empty);
       return;
     }
     var grid=document.createElement("div");
@@ -928,11 +951,11 @@
       var t=document.createElement("div");
       t.className="gal-tile";
       t.innerHTML='<img src="'+it.src+'" alt="'+(it.caption||'Project photo')+'" loading="lazy" />'+
-                  (it.caption?'<div class="gal-cap">'+it.caption+'</div>':'')+'';
+                  (it.caption?'<div class="gal-cap">'+it.caption+'</div>':'');
       t.querySelector("img").addEventListener("click",function(){openLB(list,i);});
       grid.appendChild(t);
     });
-    stage.innerHTML=""; stage.appendChild(grid);
+    stage.appendChild(grid);
   }
 
   /* ---- lightbox ---- */
