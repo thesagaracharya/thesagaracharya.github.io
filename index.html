@@ -822,32 +822,30 @@ footer{position:relative;z-index:1;padding:40px 0;}
        South Korea  \uD83C\uDDF0\uD83C\uDDF7
        Nepal        \uD83C\uDDF3\uD83C\uDDF5
      ===================================================================== */
-  var FOREIGN_VISITS=[
-    {
-      destination:"South Korea",
-      flag:"\uD83C\uDDF0\uD83C\uDDF7",
-      date:"April 7\u201317, 2025",
-      purpose:"Study & Infrastructure Exploration Tour",
-      description:"During a ten-day visit across South Korea (Seoul \u2013 Mokpo \u2013 Yeongam County), I explored the country\u2019s advanced urban infrastructure, transportation systems, construction practices, and industrial facilities. The trip provided firsthand exposure to large-scale engineering projects, sustainable urban development, and modern construction technologies, reinforcing my research interests in smart infrastructure, construction management, and resilient urban systems. Key highlights included Seoul Tower and Lotte World Tower (high-rise construction and urban density), South Korea\u2019s highly efficient expressway systems with noise barriers and green infrastructure, and Hyundai Heavy Industries\u2019 shipbuilding facilities near Mokpo\u2013Yeongam, witnessing large-scale marine and industrial construction operations.",
-      photos:{
-        src:"lotte-tower-view.jpg",
-        caption:"Looking down from Lotte World Tower, Seoul \u2014 555m above the city"
-      },
-      photos:[
-        {src:"seoul-expressway.jpg",     caption:"Urban expressway corridor in Seoul \u2014 advanced noise barriers and green infrastructure integration"},
-        {src:"seoul-metro.jpg",  caption:"Seoul Metro station wayfinding and emergency evacuation system — multi-level transit integration with passenger-centered design"},
-        {src:"spring-bloom.jpg", caption:"Cherry blossom canopy in South Korea — seasonal urban greenery enhancing the spring landscape"},
-        {src:"road-maintenance.jpg",     caption:"Night-time roadway maintenance and infrastructure operations, Seoul"},
-        {src:"yeongam-hiking-trail.jpg", caption:"Hiking trail and recreational infrastructure \u2014 Yeongam County"},
-        {src:"historic-landmark.jpg",   caption:"Cultural heritage landmark encountered during regional exploration"},
-        {src:"n-seoul-tower.jpg",        caption:"Seoul Tower"},
-        {src:"seoul-tower.jpg",     caption:"Seoul Tower overlooking the metropolitan skyline and urban development of Seoul"},
-        {src:"hyundai-shipyard.jpg",     caption:"Hyundai Heavy Industries shipbuilding facilities observed from hiking viewpoint near Mokpo\u2013Yeongam"},
-        {src:"urban-construction.jpg",   caption:"Urban construction activity highlighting ongoing development in Seoul"}
-      ]
-    }
-    /* add more visits here */
-  ];
+ var FOREIGN_VISITS = [
+  {
+    destination:"South Korea",
+    flag:"🇰🇷",
+    date:"April 7–17, 2025",
+    purpose:"Study & Infrastructure Exploration Tour",
+    description:"During a ten-day visit across South Korea (Seoul – Mokpo – Yeongam County), I explored the country’s advanced urban infrastructure, transportation systems, construction practices, and industrial facilities. The trip provided firsthand exposure to large-scale engineering projects, sustainable urban development, and modern construction technologies, reinforcing my research interests in smart infrastructure, construction management, and resilient urban systems. Key highlights included Seoul Tower and Lotte World Tower (high-rise construction and urban density), South Korea’s highly efficient expressway systems with noise barriers and green infrastructure, and Hyundai Heavy Industries’ shipbuilding facilities near Mokpo–Yeongam, witnessing large-scale marine and industrial construction operations.",
+
+    photos:[
+      {src:"lotte-tower-view.jpg",  caption:"Looking down from Lotte World Tower, Seoul — 555 m above the city"},
+      {src:"seoul-expressway.jpg",  caption:"Urban expressway corridor in Seoul — advanced noise barriers and green infrastructure integration"},
+      {src:"seoul-metro.jpg",       caption:"Seoul Metro station wayfinding and emergency evacuation system — multi-level transit integration with passenger-centered design"},
+      {src:"spring-bloom.jpg",      caption:"Cherry blossom canopy in South Korea — seasonal urban greenery enhancing the spring landscape"},
+      {src:"road-maintenance.jpg",  caption:"Night-time roadway maintenance and infrastructure operations, Seoul"},
+      {src:"yeongam-hiking-trail.jpg", caption:"Hiking trail and recreational infrastructure — Yeongam County"},
+      {src:"historic-landmark.jpg", caption:"Cultural heritage landmark encountered during regional exploration"},
+      {src:"n-seoul-tower.jpg",     caption:"N Seoul Tower — iconic telecommunications and observation landmark"},
+      {src:"seoul-tower.jpg",       caption:"Seoul Tower overlooking the metropolitan skyline and urban development of Seoul"},
+      {src:"hyundai-shipyard.jpg",  caption:"Hyundai Heavy Industries shipbuilding facilities observed from a hiking viewpoint near Mokpo–Yeongam"},
+      {src:"urban-construction.jpg",caption:"Urban construction activity highlighting ongoing development in Seoul"}
+    ]
+  }
+  /* add more visits here */
+];
 
   var stage=document.getElementById("visitsStage");
   if(!stage) return;
