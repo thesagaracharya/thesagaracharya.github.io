@@ -6,406 +6,214 @@
 <title>Sagar Acharya — Civil &amp; Structural Engineer</title>
 <meta name="description" content="Er. Sagar Acharya — Civil engineer and registered structural professional (NEC 86274). Founder of Aakar Engineering Consultancy. Research in non-destructive testing, infrastructure analytics, BIM and project controls." />
 <meta name="author" content="Sagar Acharya" />
-
-<!-- Open Graph -->
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Sagar Acharya — Civil &amp; Structural Engineer" />
-<meta property="og:description" content="Registered civil engineer (NEC 86274), consultancy founder, and infrastructure researcher based in Nepal. NDT structural assessment, project controls, BIM and data-driven infrastructure." />
+<meta property="og:description" content="Registered civil engineer (NEC 86274), consultancy founder, and infrastructure researcher based in Nepal." />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#FBFAF8" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-
-<!-- Structured data -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Sagar Acharya",
-  "honorificPrefix": "Er.",
-  "jobTitle": "Civil & Structural Engineer",
-  "email": "er.sagaracharya@gmail.com",
-  "telephone": "+977-9867853747",
-  "nationality": "Nepali",
-  "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressCountry": "Nepal" },
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Himalaya College of Engineering, Tribhuvan University" },
-  "worksFor": { "@type": "Organization", "name": "Aakar Engineering Consultancy Pvt. Ltd." },
-  "knowsAbout": ["Structural Engineering","Non-Destructive Testing","Project Controls","BIM","GIS","Infrastructure Analytics","Quantity Surveying"],
-  "sameAs": [
-    "https://www.linkedin.com/in/sagar-acharya-s0617/",
-    "https://www.youtube.com/@SagarAcharya",
-    "https://www.facebook.com/share/1Six47Tr1m/?mibextid=wwXIfr"
-  ]
-}
+{"@context":"https://schema.org","@type":"Person","name":"Sagar Acharya","honorificPrefix":"Er.","jobTitle":"Civil & Structural Engineer","email":"er.sagaracharya@gmail.com","telephone":"+977-9867853747","nationality":"Nepali","address":{"@type":"PostalAddress","addressLocality":"Kathmandu","addressCountry":"Nepal"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Himalaya College of Engineering, Tribhuvan University"},"worksFor":{"@type":"Organization","name":"Aakar Engineering Consultancy Pvt. Ltd."},"knowsAbout":["Structural Engineering","Non-Destructive Testing","Project Controls","BIM","GIS","Infrastructure Analytics","Quantity Surveying"],"sameAs":["https://www.linkedin.com/in/sagar-acharya-s0617/","https://www.youtube.com/@SagarAcharya","https://www.facebook.com/share/1Six47Tr1m/?mibextid=wwXIfr"]}
 </script>
-
 <style>
-  :root{
-    --paper:#FBFAF8;
-    --paper-2:#F2F0EA;
-    --ink:#15171C;
-    --graphite:#3A3F47;
-    --muted:#6B7178;
-    --line:rgba(21,23,28,0.13);
-    --line-soft:rgba(21,23,28,0.07);
-    --accent:#1C5B89;          /* drafting blue */
-    --accent-deep:#13456A;
-    --tick:#C2792F;            /* oxide tick — signature detail, used sparingly */
-    --card:#FFFFFF;
-    --shadow:0 1px 0 rgba(21,23,28,0.04), 0 18px 40px -28px rgba(21,23,28,0.30);
-
-    --font-display:"Archivo",system-ui,sans-serif;
-    --font-body:"Inter",system-ui,sans-serif;
-    --font-mono:"IBM Plex Mono",ui-monospace,monospace;
-
-    --maxw:1120px;
-    --gut:clamp(20px,5vw,64px);
-  }
-  html[data-theme="dark"]{
-    --paper:#0F1115;
-    --paper-2:#171A20;
-    --ink:#ECEEF1;
-    --graphite:#C4C9D0;
-    --muted:#8A929C;
-    --line:rgba(255,255,255,0.14);
-    --line-soft:rgba(255,255,255,0.07);
-    --accent:#62A6D8;
-    --accent-deep:#8FC1E6;
-    --tick:#D89A56;
-    --card:#161A21;
-    --shadow:0 1px 0 rgba(0,0,0,0.4), 0 24px 50px -30px rgba(0,0,0,0.8);
-  }
-
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--font-body);
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  ::selection{background:var(--accent);color:#fff;}
-
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);}
-
-  /* ---------- gridline atmosphere ---------- */
-  .gridfield{
-    position:fixed;inset:0;z-index:0;pointer-events:none;
-    background-image:
-      linear-gradient(var(--line-soft) 1px,transparent 1px),
-      linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
-    background-size:clamp(64px,9vw,120px) clamp(64px,9vw,120px);
-    -webkit-mask-image:radial-gradient(circle at 70% 0%,rgba(0,0,0,0.55),transparent 75%);
-            mask-image:radial-gradient(circle at 70% 0%,rgba(0,0,0,0.55),transparent 75%);
-  }
-
-  /* ---------- nav ---------- */
-  header.nav{
-    position:sticky;top:0;z-index:50;
-    background:color-mix(in srgb,var(--paper) 86%,transparent);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;}
-  .brand{display:flex;align-items:baseline;gap:10px;font-family:var(--font-mono);font-size:13px;letter-spacing:.02em;}
-  .brand b{font-family:var(--font-display);font-weight:800;font-size:16px;letter-spacing:-.01em;}
-  .brand .reg{color:var(--muted);}
-  nav.links{display:flex;gap:26px;align-items:center;}
-  nav.links a{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em;transition:color .2s;position:relative;}
-  nav.links a:hover,nav.links a.active{color:var(--ink);}
-  nav.links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-21px;height:2px;background:var(--accent);}
-  .nav-actions{display:flex;align-items:center;gap:10px;}
-  .icon-btn{
-    width:38px;height:38px;border:1px solid var(--line);background:transparent;border-radius:6px;
-    display:grid;place-items:center;cursor:pointer;color:var(--ink);transition:border-color .2s,background .2s;
-  }
-  .icon-btn:hover{border-color:var(--accent);}
-  .menu-btn{display:none;}
-
-  /* ---------- buttons ---------- */
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:13px;letter-spacing:.02em;
-    padding:12px 20px;border-radius:7px;border:1px solid var(--accent);cursor:pointer;transition:transform .15s,background .2s,color .2s;
-  }
-  .btn.solid{background:var(--accent);color:#fff;}
-  .btn.solid:hover{background:var(--accent-deep);transform:translateY(-2px);}
-  .btn.ghost{color:var(--ink);border-color:var(--line);}
-  .btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
-
-  /* ---------- section scaffolding ---------- */
-  section{position:relative;z-index:1;padding:clamp(64px,9vw,116px) 0;border-bottom:1px solid var(--line-soft);}
-  .eyebrow{
-    font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
-    display:flex;align-items:center;gap:12px;margin-bottom:22px;
-  }
-  .eyebrow .ref{color:var(--accent);}
-  .eyebrow::before{content:"";width:8px;height:8px;border:1.5px solid var(--tick);transform:rotate(45deg);display:inline-block;flex:none;}
-  h2.sec{font-family:var(--font-display);font-weight:800;font-size:clamp(30px,4.6vw,52px);line-height:1.02;letter-spacing:-.025em;margin:0 0 18px;}
-  .lead{font-size:clamp(16px,2vw,19px);color:var(--graphite);max-width:62ch;}
-
-  /* ---------- hero ---------- */
-  .hero{padding-top:clamp(56px,7vw,92px);}
-  .hero-grid{display:grid;grid-template-columns:1.55fr .95fr;gap:clamp(28px,5vw,60px);align-items:center;}
-  .hero .kicker{font-family:var(--font-mono);font-size:13px;letter-spacing:.04em;color:var(--accent);margin-bottom:18px;display:flex;gap:14px;flex-wrap:wrap;}
-  .hero .kicker span{color:var(--muted);}
-  h1.name{
-    font-family:var(--font-display);font-weight:900;letter-spacing:-.035em;line-height:.92;
-    font-size:clamp(46px,9vw,104px);margin:0 0 22px;
-  }
-  h1.name .ln2{color:var(--graphite);}
-  .hero .vp{font-size:clamp(17px,2.1vw,21px);color:var(--graphite);max-width:54ch;margin:0 0 30px;}
-  .hero .vp b{color:var(--ink);font-weight:600;}
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
-  .cred-chips{display:flex;flex-wrap:wrap;gap:8px;}
-  .chip{
-    font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--graphite);
-    border:1px solid var(--line);border-radius:5px;padding:6px 11px;background:var(--card);
-  }
-  .chip b{color:var(--accent);}
-
-  /* title-block card */
-  .titleblock{
-    border:1px solid var(--line);background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);
-  }
-  .tb-head{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid var(--line);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
-  .tb-mono-tag{color:var(--tick);}
-  .tb-body{padding:8px 0;}
-  .tb-row{display:flex;justify-content:space-between;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line-soft);font-size:13.5px;}
-  .tb-row:last-child{border-bottom:none;}
-  .tb-row .k{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.03em;color:var(--muted);text-transform:uppercase;}
-  .tb-row .v{font-weight:550;text-align:right;}
-
-  /* ---------- stats ---------- */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);margin-top:54px;}
-  .stat{padding:26px 22px;border-right:1px solid var(--line-soft);}
-  .stat:last-child{border-right:none;}
-  .stat .num{font-family:var(--font-display);font-weight:800;font-size:clamp(30px,4vw,42px);letter-spacing:-.02em;line-height:1;}
-  .stat .num small{font-size:.5em;font-weight:600;color:var(--accent);margin-left:2px;}
-  .stat .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
-
-  /* ---------- about ---------- */
-  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(30px,5vw,70px);align-items:start;}
-  .about-grid p{margin:0 0 18px;color:var(--graphite);}
-  .about-grid p:first-child{font-size:19px;color:var(--ink);}
-  .pillars{display:grid;gap:14px;}
-  .pillar{border-left:2px solid var(--accent);padding:4px 0 4px 18px;}
-  .pillar h4{font-family:var(--font-display);font-weight:700;font-size:15px;margin:0 0 4px;letter-spacing:-.01em;}
-  .pillar p{font-size:14px;color:var(--muted);margin:0;}
-
-  /* ---------- expertise ---------- */
-  .skill-table{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);}
-  .skill-row{display:grid;grid-template-columns:200px 1fr;gap:0;border-bottom:1px solid var(--line-soft);}
-  .skill-row:last-child{border-bottom:none;}
-  .skill-cat{padding:22px 22px;border-right:1px solid var(--line-soft);background:var(--paper-2);}
-  .skill-cat .code{font-family:var(--font-mono);font-size:11px;color:var(--tick);letter-spacing:.06em;}
-  .skill-cat h4{font-family:var(--font-display);font-weight:700;font-size:16px;margin:6px 0 0;letter-spacing:-.01em;}
-  .skill-items{padding:22px 22px;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;}
-  .skill-items span{font-size:13px;border:1px solid var(--line);border-radius:5px;padding:6px 11px;color:var(--graphite);transition:border-color .2s,color .2s;}
-  .skill-items span:hover{border-color:var(--accent);color:var(--accent);}
-
-  /* ---------- timeline ---------- */
-  .timeline{position:relative;margin-top:10px;}
-  .tl-item{display:grid;grid-template-columns:170px 1fr;gap:clamp(18px,3vw,40px);padding:30px 0;border-top:1px solid var(--line);}
-  .tl-item:first-child{border-top:none;}
-  .tl-when{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em;padding-top:4px;}
-  .tl-when .now{color:var(--accent);}
-  .tl-body h4{font-family:var(--font-display);font-weight:700;font-size:21px;margin:0 0 3px;letter-spacing:-.015em;}
-  .tl-body .org{font-family:var(--font-mono);font-size:12.5px;color:var(--accent);margin-bottom:12px;letter-spacing:.02em;}
-  .tl-body ul{margin:0;padding-left:18px;color:var(--graphite);}
-  .tl-body li{margin-bottom:7px;}
-  .tl-body li::marker{color:var(--tick);}
-
-  /* ---------- work / case studies ---------- */
-  .work-grid{display:grid;gap:22px;}
-  .case{
-    border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;box-shadow:var(--shadow);
-    display:grid;grid-template-columns:108px 1fr;transition:transform .2s,border-color .2s;
-  }
-  .case:hover{transform:translateY(-3px);border-color:var(--accent);}
-  .case-rail{
-    background:var(--paper-2);border-right:1px solid var(--line);
-    display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:20px 0;
-  }
-  .case-rail .idx{font-family:var(--font-display);font-weight:800;font-size:34px;color:var(--accent);letter-spacing:-.03em;}
-  .case-rail .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;writing-mode:vertical-rl;transform:rotate(180deg);color:var(--muted);text-transform:uppercase;}
-  .case-main{padding:28px 30px;}
-  .case-main h4{font-family:var(--font-display);font-weight:800;font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;margin:0 0 6px;line-height:1.1;}
-  .case-status{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--tick);margin-bottom:14px;display:inline-block;}
-  .case-status.live{color:#2f8f5b;}
-  .case-main p{margin:0 0 16px;color:var(--graphite);max-width:70ch;}
-  .case-meta{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:14px;}
-  .case-meta div{font-size:13px;}
-  .case-meta .k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:2px;}
-  .stack{display:flex;flex-wrap:wrap;gap:7px;}
-  .stack span{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);}
-
-  /* ---------- publications ---------- */
-  .pub{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:start;padding:26px 0;border-top:1px solid var(--line);}
-  .pub:first-of-type{border-top:none;}
-  .pub .yr{font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--accent);letter-spacing:-.02em;}
-  .pub h4{font-family:var(--font-display);font-weight:700;font-size:19px;line-height:1.25;margin:0 0 8px;letter-spacing:-.01em;}
-  .pub .venue{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);margin-bottom:6px;}
-  .pub .doi{font-family:var(--font-mono);font-size:12px;color:var(--accent);}
-  .pub .doi:hover{text-decoration:underline;}
-  .pub-link{font-family:var(--font-mono);font-size:12px;color:var(--muted);align-self:center;white-space:nowrap;}
-
-  /* ---------- education / credentials columns ---------- */
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);}
-  .edu-item{padding:20px 0;border-top:1px solid var(--line-soft);}
-  .edu-item:first-child{border-top:none;padding-top:0;}
-  .edu-item h4{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 3px;letter-spacing:-.01em;}
-  .edu-item .meta{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-bottom:6px;}
-  .edu-item .res{font-size:14px;color:var(--graphite);}
-  .edu-item .res b{color:var(--accent);}
-  .cred-list{display:grid;gap:10px;}
-  .cred{display:flex;gap:14px;align-items:baseline;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:14px 16px;background:var(--card);}
-  .cred .cyr{font-family:var(--font-mono);font-size:12px;color:var(--accent);flex:none;width:52px;}
-  .cred .cwhat b{display:block;font-weight:600;color:var(--ink);}
-  .cred .cwhat span{color:var(--muted);font-size:12.5px;}
-
-  /* ---------- leadership ---------- */
-  .lead-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-  .lead-card{border:1px solid var(--line);border-radius:10px;padding:24px;background:var(--card);}
-  .lead-card .role{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--tick);margin-bottom:8px;}
-  .lead-card h4{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 8px;letter-spacing:-.01em;}
-  .lead-card p{margin:0;color:var(--graphite);font-size:14.5px;}
-
-  /* ---------- social row ---------- */
-  .social-row{display:flex;gap:10px;margin-top:24px;}
-  .social-row a{width:40px;height:40px;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;color:var(--graphite);transition:border-color .2s,color .2s,transform .2s;}
-  .social-row a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
-
-  /* ---------- gallery ---------- */
-  .gal-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
-  .gal-tab{font-family:var(--font-mono);font-size:13px;letter-spacing:.03em;padding:9px 16px;border:1px solid var(--line);border-radius:7px;background:var(--card);color:var(--muted);cursor:pointer;transition:background .2s,border-color .2s,color .2s;}
-  .gal-tab:hover{border-color:var(--accent);color:var(--ink);}
-  .gal-tab.active{background:var(--accent);border-color:var(--accent);color:#fff;}
-  .gal-tab .cnt{display:inline-block;margin-left:7px;padding:1px 7px;border-radius:20px;background:color-mix(in srgb,currentColor 16%,transparent);font-size:11px;}
-  .gal-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px;}
-  .gal-year-label{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;}
-  .gal-year-label small{font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.05em;margin-left:12px;}
-
-  /* album sub-tabs */
-  .gal-albums{display:none;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding:12px 16px;background:var(--paper-2);border:1px solid var(--line-soft);border-radius:8px;}
-  .gal-albums.visible{display:flex;}
-  .gal-album-tab{font-family:var(--font-mono);font-size:12px;letter-spacing:.02em;padding:7px 14px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--muted);cursor:pointer;transition:border-color .2s,color .2s,background .2s;}
-  .gal-album-tab:hover{border-color:var(--accent);color:var(--ink);}
-  .gal-album-tab.active{background:color-mix(in srgb,var(--accent) 14%,transparent);border-color:var(--accent);color:var(--accent);font-weight:600;}
-  .gal-album-tab .cnt{display:inline-block;margin-left:7px;padding:1px 6px;border-radius:20px;background:color-mix(in srgb,currentColor 18%,transparent);font-size:11px;}
-  .gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
-  .gal-tile{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper-2);aspect-ratio:4/3;cursor:zoom-in;}
-  .gal-tile img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
-  .gal-tile:hover img{transform:scale(1.05);}
-  .gal-cap{position:absolute;left:0;right:0;bottom:0;padding:20px 12px 10px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.74));opacity:0;transition:opacity .25s;pointer-events:none;}
-  .gal-tile:hover .gal-cap{opacity:1;}
-  .gal-empty{border:1.5px dashed var(--line);border-radius:12px;padding:clamp(40px,7vw,64px) 24px;text-align:center;color:var(--muted);}
-  .gal-empty h4{font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--ink);margin:0 0 7px;letter-spacing:-.01em;}
-  .gal-empty p{margin:0;font-size:14px;}
-  .gal-album-desc{background:var(--paper-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:24px;font-size:14.5px;color:var(--graphite);line-height:1.75;}
-
-  /* lightbox */
-  .lb{position:fixed;inset:0;z-index:120;background:rgba(8,9,12,.93);display:none;align-items:center;justify-content:center;padding:24px;}
-  .lb.open{display:flex;}
-  .lb img{max-width:92vw;max-height:84vh;border-radius:8px;box-shadow:0 30px 80px -20px rgba(0,0,0,.85);}
-  .lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#cfd3d8;font-family:var(--font-mono);font-size:13px;padding:0 24px;}
-  .lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.32);color:#fff;border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:26px;line-height:1;}
-  .lb-btn:hover{background:rgba(0,0,0,.6);}
-  .lb-prev{left:18px;} .lb-next{right:18px;}
-  .lb-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.32);color:#fff;border-radius:8px;cursor:pointer;display:grid;place-items:center;font-size:18px;}
-  .lb-close:hover{background:rgba(0,0,0,.6);}
-  @media (max-width:620px){.lb-btn{width:40px;height:40px;font-size:22px;}}
-
-  /* ---------- contact ---------- */
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:start;}
-  .contact-lines{display:grid;gap:2px;margin-top:8px;}
-  .cline{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);}
-  .cline .k{font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
-  .cline a,.cline .v{font-weight:550;}
-  .cline a:hover{color:var(--accent);}
-  form .field{margin-bottom:16px;}
-  form label{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
-  form input,form textarea{
-    width:100%;background:var(--card);border:1px solid var(--line);border-radius:7px;padding:13px 14px;
-    font-family:var(--font-body);font-size:15px;color:var(--ink);transition:border-color .2s;
-  }
-  form input:focus,form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent);}
-  form textarea{resize:vertical;min-height:120px;}
-
-  /* ---------- footer ---------- */
-  footer{position:relative;z-index:1;padding:40px 0;}
-  .foot-in{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-family:var(--font-mono);font-size:12px;color:var(--muted);}
-  .foot-in a:hover{color:var(--accent);}
-
-  /* ---------- reveal ---------- */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
-  .reveal.in{opacity:1;transform:none;}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
-
-  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
-
-  /* ---------- responsive ---------- */
-  @media (max-width:900px){
-    .hero-grid{grid-template-columns:1fr;}
-    .titleblock{max-width:440px;}
-    .about-grid,.two-col,.contact-grid{grid-template-columns:1fr;}
-    .lead-grid{grid-template-columns:1fr;}
-    .stats{grid-template-columns:1fr 1fr;}
-    .stat:nth-child(2){border-right:none;}
-    .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line-soft);}
-    nav.links{display:none;}
-    .menu-btn{display:grid;}
-    nav.links.open{
-      display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;
-      background:var(--paper);border-bottom:1px solid var(--line);padding:18px var(--gut);gap:18px;
-    }
-    nav.links.open a.active::after{display:none;}
-  }
-  @media (max-width:620px){
-    .skill-row{grid-template-columns:1fr;}
-    .skill-cat{border-right:none;border-bottom:1px solid var(--line-soft);}
-    .tl-item{grid-template-columns:1fr;gap:8px;}
-    .case{grid-template-columns:1fr;}
-    .case-rail{flex-direction:row;border-right:none;border-bottom:1px solid var(--line);padding:14px 18px;}
-    .case-rail .tag{writing-mode:horizontal-tb;transform:none;}
-    .pub{grid-template-columns:auto 1fr;}
-    .pub-link{grid-column:2;}
-    .stats{grid-template-columns:1fr;}
-    .stat{border-right:none;border-bottom:1px solid var(--line-soft);}
-    .stat:last-child{border-bottom:none;}
-  }
+:root{--paper:#FBFAF8;--paper-2:#F2F0EA;--ink:#15171C;--graphite:#3A3F47;--muted:#6B7178;--line:rgba(21,23,28,0.13);--line-soft:rgba(21,23,28,0.07);--accent:#1C5B89;--accent-deep:#13456A;--tick:#C2792F;--card:#FFFFFF;--shadow:0 1px 0 rgba(21,23,28,0.04),0 18px 40px -28px rgba(21,23,28,0.30);--font-display:"Archivo",system-ui,sans-serif;--font-body:"Inter",system-ui,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--maxw:1120px;--gut:clamp(20px,5vw,64px);}
+html[data-theme="dark"]{--paper:#0F1115;--paper-2:#171A20;--ink:#ECEEF1;--graphite:#C4C9D0;--muted:#8A929C;--line:rgba(255,255,255,0.14);--line-soft:rgba(255,255,255,0.07);--accent:#62A6D8;--accent-deep:#8FC1E6;--tick:#D89A56;--card:#161A21;--shadow:0 1px 0 rgba(0,0,0,0.4),0 24px 50px -30px rgba(0,0,0,0.8);}
+*{box-sizing:border-box;}html{scroll-behavior:smooth;}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}img{max-width:100%;display:block;}::selection{background:var(--accent);color:#fff;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);}
+.gridfield{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);background-size:clamp(64px,9vw,120px) clamp(64px,9vw,120px);-webkit-mask-image:radial-gradient(circle at 70% 0%,rgba(0,0,0,0.55),transparent 75%);mask-image:radial-gradient(circle at 70% 0%,rgba(0,0,0,0.55),transparent 75%);}
+header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.brand{display:flex;align-items:baseline;gap:10px;font-family:var(--font-mono);font-size:13px;letter-spacing:.02em;}
+.brand b{font-family:var(--font-display);font-weight:800;font-size:16px;letter-spacing:-.01em;}.brand .reg{color:var(--muted);}
+nav.links{display:flex;gap:26px;align-items:center;}
+nav.links a{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em;transition:color .2s;position:relative;}
+nav.links a:hover,nav.links a.active{color:var(--ink);}
+nav.links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-21px;height:2px;background:var(--accent);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.icon-btn{width:38px;height:38px;border:1px solid var(--line);background:transparent;border-radius:6px;display:grid;place-items:center;cursor:pointer;color:var(--ink);transition:border-color .2s,background .2s;}.icon-btn:hover{border-color:var(--accent);}
+.menu-btn{display:none;}
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:13px;letter-spacing:.02em;padding:12px 20px;border-radius:7px;border:1px solid var(--accent);cursor:pointer;transition:transform .15s,background .2s,color .2s;}
+.btn.solid{background:var(--accent);color:#fff;}.btn.solid:hover{background:var(--accent-deep);transform:translateY(-2px);}
+.btn.ghost{color:var(--ink);border-color:var(--line);}.btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
+section{position:relative;z-index:1;padding:clamp(64px,9vw,116px) 0;border-bottom:1px solid var(--line-soft);}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.eyebrow .ref{color:var(--accent);}
+.eyebrow::before{content:"";width:8px;height:8px;border:1.5px solid var(--tick);transform:rotate(45deg);display:inline-block;flex:none;}
+h2.sec{font-family:var(--font-display);font-weight:800;font-size:clamp(30px,4.6vw,52px);line-height:1.02;letter-spacing:-.025em;margin:0 0 18px;}
+.lead{font-size:clamp(16px,2vw,19px);color:var(--graphite);max-width:62ch;}
+.hero{padding-top:clamp(56px,7vw,92px);}
+.hero-grid{display:grid;grid-template-columns:1.55fr .95fr;gap:clamp(28px,5vw,60px);align-items:center;}
+.hero .kicker{font-family:var(--font-mono);font-size:13px;letter-spacing:.04em;color:var(--accent);margin-bottom:18px;display:flex;gap:14px;flex-wrap:wrap;}
+.hero .kicker span{color:var(--muted);}
+h1.name{font-family:var(--font-display);font-weight:900;letter-spacing:-.035em;line-height:.92;font-size:clamp(46px,9vw,104px);margin:0 0 22px;}
+h1.name .ln2{color:var(--graphite);}
+.hero .vp{font-size:clamp(17px,2.1vw,21px);color:var(--graphite);max-width:54ch;margin:0 0 30px;}
+.hero .vp b{color:var(--ink);font-weight:600;}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
+.cred-chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--graphite);border:1px solid var(--line);border-radius:5px;padding:6px 11px;background:var(--card);}.chip b{color:var(--accent);}
+.titleblock{border:1px solid var(--line);background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
+.tb-head{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid var(--line);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}.tb-mono-tag{color:var(--tick);}
+.tb-body{padding:8px 0;}
+.tb-row{display:flex;justify-content:space-between;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line-soft);font-size:13.5px;}.tb-row:last-child{border-bottom:none;}
+.tb-row .k{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.03em;color:var(--muted);text-transform:uppercase;}.tb-row .v{font-weight:550;text-align:right;}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);margin-top:54px;}
+.stat{padding:26px 22px;border-right:1px solid var(--line-soft);}.stat:last-child{border-right:none;}
+.stat .num{font-family:var(--font-display);font-weight:800;font-size:clamp(30px,4vw,42px);letter-spacing:-.02em;line-height:1;}
+.stat .num small{font-size:.5em;font-weight:600;color:var(--accent);margin-left:2px;}
+.stat .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(30px,5vw,70px);align-items:start;}
+.about-grid p{margin:0 0 18px;color:var(--graphite);}.about-grid p:first-child{font-size:19px;color:var(--ink);}
+.pillars{display:grid;gap:14px;}
+.pillar{border-left:2px solid var(--accent);padding:4px 0 4px 18px;}
+.pillar h4{font-family:var(--font-display);font-weight:700;font-size:15px;margin:0 0 4px;letter-spacing:-.01em;}
+.pillar p{font-size:14px;color:var(--muted);margin:0;}
+.skill-table{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);}
+.skill-row{display:grid;grid-template-columns:200px 1fr;gap:0;border-bottom:1px solid var(--line-soft);}.skill-row:last-child{border-bottom:none;}
+.skill-cat{padding:22px 22px;border-right:1px solid var(--line-soft);background:var(--paper-2);}
+.skill-cat .code{font-family:var(--font-mono);font-size:11px;color:var(--tick);letter-spacing:.06em;}
+.skill-cat h4{font-family:var(--font-display);font-weight:700;font-size:16px;margin:6px 0 0;letter-spacing:-.01em;}
+.skill-items{padding:22px 22px;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;}
+.skill-items span{font-size:13px;border:1px solid var(--line);border-radius:5px;padding:6px 11px;color:var(--graphite);transition:border-color .2s,color .2s;}
+.skill-items span:hover{border-color:var(--accent);color:var(--accent);}
+.timeline{position:relative;margin-top:10px;}
+.tl-item{display:grid;grid-template-columns:170px 1fr;gap:clamp(18px,3vw,40px);padding:30px 0;border-top:1px solid var(--line);}.tl-item:first-child{border-top:none;}
+.tl-when{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em;padding-top:4px;}.tl-when .now{color:var(--accent);}
+.tl-body h4{font-family:var(--font-display);font-weight:700;font-size:21px;margin:0 0 3px;letter-spacing:-.015em;}
+.tl-body .org{font-family:var(--font-mono);font-size:12.5px;color:var(--accent);margin-bottom:12px;letter-spacing:.02em;}
+.tl-body ul{margin:0;padding-left:18px;color:var(--graphite);}.tl-body li{margin-bottom:7px;}.tl-body li::marker{color:var(--tick);}
+.work-grid{display:grid;gap:22px;}
+.case{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:108px 1fr;transition:transform .2s,border-color .2s;}
+.case:hover{transform:translateY(-3px);border-color:var(--accent);}
+.case-rail{background:var(--paper-2);border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:20px 0;}
+.case-rail .idx{font-family:var(--font-display);font-weight:800;font-size:34px;color:var(--accent);letter-spacing:-.03em;}
+.case-rail .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;writing-mode:vertical-rl;transform:rotate(180deg);color:var(--muted);text-transform:uppercase;}
+.case-main{padding:28px 30px;}
+.case-main h4{font-family:var(--font-display);font-weight:800;font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;margin:0 0 6px;line-height:1.1;}
+.case-status{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--tick);margin-bottom:14px;display:inline-block;}
+.case-status.live{color:#2f8f5b;}
+.case-main p{margin:0 0 16px;color:var(--graphite);max-width:70ch;}
+.case-meta{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:14px;}.case-meta div{font-size:13px;}
+.case-meta .k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:2px;}
+.stack{display:flex;flex-wrap:wrap;gap:7px;}
+.stack span{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);}
+.pub{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:start;padding:26px 0;border-top:1px solid var(--line);}.pub:first-of-type{border-top:none;}
+.pub .yr{font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--accent);letter-spacing:-.02em;}
+.pub h4{font-family:var(--font-display);font-weight:700;font-size:19px;line-height:1.25;margin:0 0 8px;letter-spacing:-.01em;}
+.pub .venue{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);margin-bottom:6px;}
+.pub .doi{font-family:var(--font-mono);font-size:12px;color:var(--accent);}.pub .doi:hover{text-decoration:underline;}
+.pub-link{font-family:var(--font-mono);font-size:12px;color:var(--muted);align-self:center;white-space:nowrap;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);}
+.edu-item{padding:20px 0;border-top:1px solid var(--line-soft);}.edu-item:first-child{border-top:none;padding-top:0;}
+.edu-item h4{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 3px;letter-spacing:-.01em;}
+.edu-item .meta{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-bottom:6px;}
+.edu-item .res{font-size:14px;color:var(--graphite);}.edu-item .res b{color:var(--accent);}
+.cred-list{display:grid;gap:10px;}
+.cred{display:flex;gap:14px;align-items:baseline;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:14px 16px;background:var(--card);}
+.cred .cyr{font-family:var(--font-mono);font-size:12px;color:var(--accent);flex:none;width:52px;}
+.cred .cwhat b{display:block;font-weight:600;color:var(--ink);}.cred .cwhat span{color:var(--muted);font-size:12.5px;}
+.lead-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.lead-card{border:1px solid var(--line);border-radius:10px;padding:24px;background:var(--card);}
+.lead-card .role{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--tick);margin-bottom:8px;}
+.lead-card h4{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 8px;letter-spacing:-.01em;}
+.lead-card p{margin:0;color:var(--graphite);font-size:14.5px;}
+.social-row{display:flex;gap:10px;margin-top:24px;}
+.social-row a{width:40px;height:40px;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;color:var(--graphite);transition:border-color .2s,color .2s,transform .2s;}
+.social-row a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
+.gal-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.gal-tab{font-family:var(--font-mono);font-size:13px;letter-spacing:.03em;padding:9px 16px;border:1px solid var(--line);border-radius:7px;background:var(--card);color:var(--muted);cursor:pointer;transition:background .2s,border-color .2s,color .2s;}
+.gal-tab:hover{border-color:var(--accent);color:var(--ink);}
+.gal-tab.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.gal-tab .cnt{display:inline-block;margin-left:7px;padding:1px 7px;border-radius:20px;background:color-mix(in srgb,currentColor 16%,transparent);font-size:11px;}
+.gal-albums{display:none;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding:12px 16px;background:var(--paper-2);border:1px solid var(--line-soft);border-radius:8px;}
+.gal-albums.visible{display:flex;}
+.gal-album-tab{font-family:var(--font-mono);font-size:12px;letter-spacing:.02em;padding:7px 14px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--muted);cursor:pointer;transition:border-color .2s,color .2s,background .2s;}
+.gal-album-tab:hover{border-color:var(--accent);color:var(--ink);}
+.gal-album-tab.active{background:color-mix(in srgb,var(--accent) 14%,transparent);border-color:var(--accent);color:var(--accent);font-weight:600;}
+.gal-album-tab .cnt{display:inline-block;margin-left:7px;padding:1px 6px;border-radius:20px;background:color-mix(in srgb,currentColor 18%,transparent);font-size:11px;}
+.gal-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px;}
+.gal-year-label{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;}
+.gal-year-label small{font-family:var(--font-mono);font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.05em;margin-left:12px;}
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;}
+.gal-tile{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper-2);aspect-ratio:4/3;cursor:zoom-in;}
+.gal-tile img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}.gal-tile:hover img{transform:scale(1.05);}
+.gal-cap{position:absolute;left:0;right:0;bottom:0;padding:20px 12px 10px;font-size:12.5px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.74));opacity:0;transition:opacity .25s;pointer-events:none;}
+.gal-tile:hover .gal-cap{opacity:1;}
+.gal-album-desc{background:var(--paper-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:24px;font-size:14.5px;color:var(--graphite);line-height:1.75;}
+.gal-empty{border:1.5px dashed var(--line);border-radius:12px;padding:clamp(40px,7vw,64px) 24px;text-align:center;color:var(--muted);}
+.gal-empty h4{font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--ink);margin:0 0 7px;letter-spacing:-.01em;}
+.gal-empty p{margin:0;font-size:14px;}
+.visit-grid{display:grid;gap:24px;}
+.visit-card{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden;box-shadow:var(--shadow);transition:border-color .2s;}
+.visit-card:hover{border-color:var(--accent);}
+.visit-header{display:flex;align-items:flex-start;gap:18px;padding:22px 24px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);}
+.visit-flag{font-size:40px;line-height:1;flex:none;}
+.visit-info{flex:1;min-width:0;}
+.visit-dest{font-family:var(--font-display);font-weight:800;font-size:clamp(18px,2.5vw,24px);letter-spacing:-.02em;margin:0 0 8px;}
+.visit-badges{display:flex;flex-wrap:wrap;gap:7px;}
+.visit-date{font-family:var(--font-mono);font-size:11.5px;padding:3px 10px;border-radius:4px;border:1px solid var(--line);color:var(--muted);}
+.visit-purpose{font-family:var(--font-mono);font-size:11.5px;padding:3px 10px;border-radius:4px;background:color-mix(in srgb,var(--accent) 12%,transparent);border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);color:var(--accent);}
+.visit-desc{padding:18px 24px;color:var(--graphite);font-size:14.5px;line-height:1.75;border-bottom:1px solid var(--line-soft);}
+.visit-photos{padding:16px 24px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;}
+.visit-photo-tile{border-radius:8px;overflow:hidden;aspect-ratio:4/3;cursor:zoom-in;border:1px solid var(--line);position:relative;}
+.visit-photo-tile img{width:100%;height:100%;object-fit:cover;transition:transform .35s;}.visit-photo-tile:hover img{transform:scale(1.06);}
+.visit-photo-cap{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;font-size:12px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.72));opacity:0;transition:opacity .25s;pointer-events:none;}
+.visit-photo-tile:hover .visit-photo-cap{opacity:1;}
+  .visit-video{padding:16px 24px 20px;border-bottom:1px solid var(--line-soft);}
+  .visit-video-inner{position:relative;border-radius:10px;overflow:hidden;background:#000;line-height:0;}
+  .visit-video-inner video{width:100%;max-height:420px;object-fit:contain;display:block;}
+  .visit-video-inner iframe{width:100%;height:340px;border:none;display:block;}
+  .visit-video-cap{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-top:9px;text-align:center;line-height:1.5;}
+.visits-empty{border:1.5px dashed var(--line);border-radius:12px;padding:clamp(40px,7vw,64px) 24px;text-align:center;color:var(--muted);}
+.visits-empty h4{font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--ink);margin:0 0 7px;letter-spacing:-.01em;}
+.visits-empty p{margin:0;font-size:14px;}
+.lb{position:fixed;inset:0;z-index:120;background:rgba(8,9,12,.93);display:none;align-items:center;justify-content:center;padding:24px;}
+.lb.open{display:flex;}
+.lb img{max-width:92vw;max-height:84vh;border-radius:8px;box-shadow:0 30px 80px -20px rgba(0,0,0,.85);}
+.lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#cfd3d8;font-family:var(--font-mono);font-size:13px;padding:0 24px;}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.32);color:#fff;border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:26px;line-height:1;}
+.lb-btn:hover{background:rgba(0,0,0,.6);}
+.lb-prev{left:18px;}.lb-next{right:18px;}
+.lb-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.32);color:#fff;border-radius:8px;cursor:pointer;display:grid;place-items:center;font-size:18px;}
+.lb-close:hover{background:rgba(0,0,0,.6);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:start;}
+.contact-lines{display:grid;gap:2px;margin-top:8px;}
+.cline{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);}
+.cline .k{font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
+.cline a,.cline .v{font-weight:550;}.cline a:hover{color:var(--accent);}
+form .field{margin-bottom:16px;}
+form label{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
+form input,form textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:7px;padding:13px 14px;font-family:var(--font-body);font-size:15px;color:var(--ink);transition:border-color .2s;}
+form input:focus,form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent);}
+form textarea{resize:vertical;min-height:120px;}
+footer{position:relative;z-index:1;padding:40px 0;}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-family:var(--font-mono);font-size:12px;color:var(--muted);}
+.foot-in a:hover{color:var(--accent);}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;}.titleblock{max-width:440px;}.about-grid,.two-col,.contact-grid{grid-template-columns:1fr;}.lead-grid{grid-template-columns:1fr;}.stats{grid-template-columns:1fr 1fr;}.stat:nth-child(2){border-right:none;}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line-soft);}nav.links{display:none;}.menu-btn{display:grid;}nav.links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:18px var(--gut);gap:18px;}nav.links.open a.active::after{display:none;}}
+@media(max-width:620px){.skill-row{grid-template-columns:1fr;}.skill-cat{border-right:none;border-bottom:1px solid var(--line-soft);}.tl-item{grid-template-columns:1fr;gap:8px;}.case{grid-template-columns:1fr;}.case-rail{flex-direction:row;border-right:none;border-bottom:1px solid var(--line);padding:14px 18px;}.case-rail .tag{writing-mode:horizontal-tb;transform:none;}.pub{grid-template-columns:auto 1fr;}.pub-link{grid-column:2;}.stats{grid-template-columns:1fr;}.stat{border-right:none;border-bottom:1px solid var(--line-soft);}.stat:last-child{border-bottom:none;}.visit-header{flex-direction:column;gap:10px;}.visit-flag{font-size:32px;}.lb-btn{width:40px;height:40px;font-size:22px;}}
 </style>
 </head>
 <body>
 <div class="gridfield" aria-hidden="true"></div>
-
-<!-- ================= NAV ================= -->
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="Sagar Acharya — home">
-      <b>SAGAR&nbsp;ACHARYA</b><span class="reg">NEC&nbsp;86274</span>
-    </a>
+    <a class="brand" href="#top" aria-label="Sagar Acharya home"><b>SAGAR&nbsp;ACHARYA</b><span class="reg">NEC&nbsp;86274</span></a>
     <nav class="links" id="navlinks">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#experience">Experience</a>
-      <a href="#work">Work</a>
-      <a href="#research">Research</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a>
+      <a href="#work">Work</a><a href="#research">Research</a><a href="#gallery">Gallery</a>
+      <a href="#visits">Visits</a><a href="#education">Education</a><a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
         <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
         <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
@@ -415,57 +223,51 @@
     </div>
   </div>
 </header>
-
 <main id="top">
 
-<!-- ================= HERO ================= -->
 <section class="hero" id="hero" style="border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="kicker reveal">Civil &amp; Structural Engineer <span>// Arghakhanchi · Kathmandu, Nepal</span></div>
+        <div class="kicker reveal">Civil &amp; Structural Engineer <span>// Arghakhanchi &middot; Kathmandu, Nepal</span></div>
         <h1 class="name reveal">Sagar<br><span class="ln2">Acharya</span></h1>
-        <p class="vp reveal">I design, assess, and plan the built environment — from <b>structural design and post-fire residual-strength assessment</b> to <b>project controls and data-driven infrastructure</b>. Registered engineer, consultancy founder, and published researcher building rigorous, evidence-led practice in Nepal.</p>
+        <p class="vp reveal">I design, assess, and plan the built environment &mdash; from <b>structural design and post-fire residual-strength assessment</b> to <b>project controls and data-driven infrastructure</b>. Registered engineer, consultancy founder, and published researcher building rigorous, evidence-led practice in Nepal.</p>
         <div class="cta-row reveal">
-          <a class="btn solid" href="#work">View work
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <a class="btn solid" href="#work">View work <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn ghost" href="#contact">Get in touch</a>
         </div>
         <div class="cred-chips reveal">
-          <span class="chip"><b>NEC</b> Registered Engineer · 86274</span>
-          <span class="chip"><b>B.E.</b> Civil · Tribhuvan University</span>
+          <span class="chip"><b>NEC</b> Registered Engineer &middot; 86274</span>
+          <span class="chip"><b>B.E.</b> Civil &middot; Tribhuvan University</span>
           <span class="chip"><b>2</b> peer-reviewed publications</span>
-          <span class="chip"><b>Founder</b> · Aakar Engineering Consultancy</span>
+          <span class="chip"><b>Founder</b> &middot; Aakar Engineering Consultancy</span>
         </div>
-        <div class="social-row reveal" aria-label="Social profiles">
-          <a href="https://www.linkedin.com/in/sagar-acharya-s0617/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+        <div class="social-row reveal">
+          <a href="https://www.linkedin.com/in/sagar-acharya-s0617/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.86V21H9z"/></svg>
           </a>
-          <a href="https://www.youtube.com/@SagarAcharya" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+          <a href="https://www.youtube.com/@SagarAcharya" target="_blank" rel="noopener" aria-label="YouTube">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.3-.42-4.88a2.55 2.55 0 0 0-1.8-1.8C19.2 4.9 12 4.9 12 4.9s-7.2 0-8.78.42a2.55 2.55 0 0 0-1.8 1.8C1 8.7 1 12 1 12s0 3.3.42 4.88a2.55 2.55 0 0 0 1.8 1.8C4.8 19.1 12 19.1 12 19.1s7.2 0 8.78-.42a2.55 2.55 0 0 0 1.8-1.8C23 15.3 23 12 23 12zM9.75 15.5v-7L15.5 12z"/></svg>
           </a>
-          <a href="https://www.facebook.com/share/1Six47Tr1m/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+          <a href="https://www.facebook.com/share/1Six47Tr1m/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
           </a>
         </div>
       </div>
-
-      <aside class="titleblock reveal" aria-label="Profile summary">
+      <aside class="titleblock reveal">
         <div class="tb-head"><span>Profile / Title Block</span><span class="tb-mono-tag">A.00</span></div>
         <div class="tb-body">
           <div class="tb-row"><span class="k">Discipline</span><span class="v">Civil &amp; Structural</span></div>
           <div class="tb-row"><span class="k">Registration</span><span class="v">NEC 86274</span></div>
           <div class="tb-row"><span class="k">Degree</span><span class="v">B.E. Civil, TU</span></div>
-          <div class="tb-row"><span class="k">US equivalency</span><span class="v">Bachelor's (WES)</span></div>
+          <div class="tb-row"><span class="k">US equivalency</span><span class="v">Bachelor&rsquo;s (WES)</span></div>
           <div class="tb-row"><span class="k">Current</span><span class="v">Founder, Aakar Eng.</span></div>
-          <div class="tb-row"><span class="k">Focus</span><span class="v">NDT · Controls · BIM</span></div>
+          <div class="tb-row"><span class="k">Focus</span><span class="v">NDT &middot; Controls &middot; BIM</span></div>
           <div class="tb-row"><span class="k">Status</span><span class="v" style="color:var(--accent)">Open to collaboration</span></div>
         </div>
       </aside>
     </div>
-
-    <div class="stats reveal" aria-label="Key figures">
+    <div class="stats reveal">
       <div class="stat"><div class="num">2</div><div class="lbl">Peer-reviewed papers</div></div>
       <div class="stat"><div class="num">2</div><div class="lbl">Active research projects</div></div>
       <div class="stat"><div class="num">722<small>days</small></div><div class="lbl">Hospital schedule planned</div></div>
@@ -474,7 +276,6 @@
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
 <section id="about">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">A.01</span> Profile</div>
@@ -482,8 +283,8 @@
     <div class="about-grid">
       <div class="reveal">
         <p>I am a civil engineer based in Nepal, registered with the Nepal Engineering Council and the founder of Aakar Engineering Consultancy. My work sits where structural design meets project delivery: I produce structural designs, bills of quantities and cost estimates, plan and schedule construction, and assess the condition of existing structures.</p>
-        <p>My research interest is making infrastructure decisions defensible. In post-disaster contexts where destructive testing isn't possible, I've developed integrated non-destructive testing frameworks that turn field readings into clear retain–repair–replace decisions. In project delivery, I study where intended schedules and standard time–cost models diverge, and how procurement rules shape environmental outcomes.</p>
-        <p>I'm currently deepening my toolkit in QGIS, Python data science, and machine learning — applying them to infrastructure asset management, project controls, and the digital-twin direction the field is heading.</p>
+        <p>My research interest is making infrastructure decisions defensible. In post-disaster contexts where destructive testing isn&rsquo;t possible, I&rsquo;ve developed integrated non-destructive testing frameworks that turn field readings into clear retain&ndash;repair&ndash;replace decisions. In project delivery, I study where intended schedules and standard time&ndash;cost models diverge, and how procurement rules shape environmental outcomes.</p>
+        <p>I&rsquo;m currently deepening my toolkit in QGIS, Python data science, and machine learning &mdash; applying them to infrastructure asset management, project controls, and the digital-twin direction the field is heading.</p>
       </div>
       <div class="pillars reveal">
         <div class="pillar"><h4>Structural assessment</h4><p>Non-destructive testing, residual-strength evaluation, and condition-based decision matrices for damaged structures.</p></div>
@@ -495,102 +296,59 @@
   </div>
 </section>
 
-<!-- ================= EXPERTISE ================= -->
 <section id="expertise">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">B.02</span> Expertise</div>
     <h2 class="sec reveal">Skills &amp; toolchain</h2>
-    <p class="lead reveal" style="margin-bottom:38px">A working stack across structural software, project controls, spatial analysis, and the data-science tooling I'm extending into infrastructure systems.</p>
+    <p class="lead reveal" style="margin-bottom:38px">A working stack across structural software, project controls, spatial analysis, and data-science tooling extended into infrastructure systems.</p>
     <div class="skill-table reveal">
-      <div class="skill-row">
-        <div class="skill-cat"><span class="code">01</span><h4>Engineering Software</h4></div>
-        <div class="skill-items"><span>AutoCAD</span><span>ETABS</span><span>STAAD.Pro</span><span>MS Project</span><span>Primavera P6</span></div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat"><span class="code">02</span><h4>Project Controls</h4></div>
-        <div class="skill-items"><span>Construction Planning</span><span>Scheduling</span><span>Cost Estimation</span><span>BOQ Preparation</span><span>Quantity Surveying</span><span>QA / QC</span><span>EHS Planning</span></div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat"><span class="code">03</span><h4>GIS &amp; Spatial</h4></div>
-        <div class="skill-items"><span>QGIS</span><span>Spatial Data Processing</span><span>Mapping Fundamentals</span></div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat"><span class="code">04</span><h4>Data Science</h4></div>
-        <div class="skill-items"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Data Visualization</span><span>Data Cleaning</span><span>Machine Learning</span><span>PCA</span></div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat"><span class="code">05</span><h4>Structural Assessment</h4></div>
-        <div class="skill-items"><span>UPV</span><span>Rebound Hammer / SonReb</span><span>Impact-Echo</span><span>Infrared Thermography</span><span>GPR</span><span>Half-Cell Potential</span><span>Eurocode 2 / 3 · ACI</span></div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat"><span class="code">06</span><h4>Research</h4></div>
-        <div class="skill-items"><span>Academic Writing</span><span>Literature Review</span><span>Technical Reporting</span><span>Statistical Analysis</span><span>LaTeX</span></div>
-      </div>
+      <div class="skill-row"><div class="skill-cat"><span class="code">01</span><h4>Engineering Software</h4></div><div class="skill-items"><span>AutoCAD</span><span>ETABS</span><span>STAAD.Pro</span><span>MS Project</span><span>Primavera P6</span></div></div>
+      <div class="skill-row"><div class="skill-cat"><span class="code">02</span><h4>Project Controls</h4></div><div class="skill-items"><span>Construction Planning</span><span>Scheduling</span><span>Cost Estimation</span><span>BOQ Preparation</span><span>Quantity Surveying</span><span>QA / QC</span><span>EHS Planning</span></div></div>
+      <div class="skill-row"><div class="skill-cat"><span class="code">03</span><h4>GIS &amp; Spatial</h4></div><div class="skill-items"><span>QGIS</span><span>Spatial Data Processing</span><span>Mapping Fundamentals</span></div></div>
+      <div class="skill-row"><div class="skill-cat"><span class="code">04</span><h4>Data Science</h4></div><div class="skill-items"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Data Visualization</span><span>Data Cleaning</span><span>Machine Learning</span><span>PCA</span></div></div>
+      <div class="skill-row"><div class="skill-cat"><span class="code">05</span><h4>Structural Assessment</h4></div><div class="skill-items"><span>UPV</span><span>Rebound Hammer / SonReb</span><span>Impact-Echo</span><span>Infrared Thermography</span><span>GPR</span><span>Half-Cell Potential</span><span>Eurocode 2 / 3 &middot; ACI</span></div></div>
+      <div class="skill-row"><div class="skill-cat"><span class="code">06</span><h4>Research</h4></div><div class="skill-items"><span>Academic Writing</span><span>Literature Review</span><span>Technical Reporting</span><span>Statistical Analysis</span><span>LaTeX</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
 <section id="experience">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">C.03</span> Experience</div>
     <h2 class="sec reveal">Professional timeline</h2>
     <div class="timeline">
       <div class="tl-item reveal">
-        <div class="tl-when">Dec 2024 — <span class="now">Present</span></div>
-        <div class="tl-body">
-          <h4>Founder</h4>
-          <div class="org">Aakar Engineering Consultancy Pvt. Ltd.</div>
-          <ul>
-            <li>Lead consultancy operations across structural design, valuation, construction planning, and project coordination.</li>
-            <li>Deliver residential and semi-commercial engineering projects end to end.</li>
-            <li>Own client relations, technical reviews, and project documentation.</li>
-          </ul>
-        </div>
+        <div class="tl-when">Dec 2024 &mdash; <span class="now">Present</span></div>
+        <div class="tl-body"><h4>Founder</h4><div class="org">Aakar Engineering Consultancy Pvt. Ltd.</div><ul><li>Lead consultancy operations across structural design, valuation, construction planning, and project coordination.</li><li>Deliver residential and semi-commercial engineering projects end to end.</li><li>Own client relations, technical reviews, and project documentation.</li></ul></div>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-when">Jan 2024 — Dec 2024</div>
-        <div class="tl-body">
-          <h4>Freelance Civil Engineer</h4>
-          <div class="org">Independent practice</div>
-          <ul>
-            <li>Prepared structural designs, BOQs, quantity takeoffs, and cost estimates for residential and commercial projects.</li>
-            <li>Coordinated design approvals and technical consultations with clients and architects.</li>
-          </ul>
-        </div>
+        <div class="tl-when">Jan 2024 &mdash; Dec 2024</div>
+        <div class="tl-body"><h4>Freelance Civil Engineer</h4><div class="org">Independent practice</div><ul><li>Prepared structural designs, BOQs, quantity takeoffs, and cost estimates for residential and commercial projects.</li><li>Coordinated design approvals and technical consultations with clients and architects.</li></ul></div>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-when">Oct 2023 — Jan 2024</div>
-        <div class="tl-body">
-          <h4>Civil Engineering Intern</h4>
-          <div class="org">Primary Hospital Project</div>
-          <ul>
-            <li>Supported pre-construction documentation, scheduling, QA/QC and EHS planning, and reporting.</li>
-            <li>Contributed to the planning and documentation of a 15-bed Primary Hospital project.</li>
-          </ul>
-        </div>
+        <div class="tl-when">Oct 2023 &mdash; Jan 2024</div>
+        <div class="tl-body"><h4>Civil Engineering Intern</h4><div class="org">Primary Hospital Project</div><ul><li>Supported pre-construction documentation, scheduling, QA/QC and EHS planning, and reporting.</li><li>Contributed to planning and documentation of a 15-bed Primary Hospital project.</li></ul></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= WORK / CASE STUDIES ================= -->
 <section id="work">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">D.04</span> Featured Work</div>
     <h2 class="sec reveal">Selected projects</h2>
-    <p class="lead reveal" style="margin-bottom:40px">Five projects that show the range — a field research framework, a full project-controls package, an applied statistics study, a live full-construction delivery, and a complete architectural and structural design package.</p>
+    <p class="lead reveal" style="margin-bottom:40px">Five projects that show the range &mdash; a field research framework, a full project-controls package, an applied statistics study, a live full-construction delivery, and a complete architectural and structural design package.</p>
     <div class="work-grid">
 
       <article class="case reveal">
-        <div class="case-rail"><span class="idx">01</span><span class="tag">Research · NDT</span></div>
+        <div class="case-rail"><span class="idx">01</span><span class="tag">Research &middot; NDT</span></div>
         <div class="case-main">
           <h4>Residual Strength Assessment of Fire-Exposed Buildings</h4>
-          <span class="case-status">Ongoing · Sole author</span>
-          <p><b>Problem.</b> After fire damage, buildings must be judged safe, repairable, or demolished — but destructive coring is often impossible on politically sensitive or unstable sites. <b>Approach.</b> An integrated, NDT-only framework combining UPV, rebound/SonReb, impact-echo, infrared thermography, GPR, half-cell potential and portable hardness, normalised to on-site reference zones and codified reduction factors. <b>Outcome.</b> A replicable retain–repair–replace decision matrix tied to demand ratios, validated against Eurocode and ACI fire-degradation models, with full calculation sheets for each method.</p>
+          <span class="case-status">Ongoing &middot; Sole author</span>
+          <p><b>Problem.</b> After fire damage, buildings must be judged safe, repairable, or demolished &mdash; but destructive coring is often impossible on politically sensitive or unstable sites. <b>Approach.</b> An integrated, NDT-only framework combining UPV, rebound/SonReb, impact-echo, infrared thermography, GPR, half-cell potential and portable hardness, normalised to on-site reference zones and codified reduction factors. <b>Outcome.</b> A replicable retain&ndash;repair&ndash;replace decision matrix tied to demand ratios, validated against Eurocode and ACI fire-degradation models, with full calculation sheets for each method.</p>
           <div class="case-meta">
             <div><span class="k">Methods</span>7+ integrated NDT techniques</div>
-            <div><span class="k">Standards</span>Eurocode 2/3 · ACI 228/216 · ASTM</div>
+            <div><span class="k">Standards</span>Eurocode 2/3 &middot; ACI 228/216 &middot; ASTM</div>
             <div><span class="k">Output</span>Decision matrix + calc templates</div>
           </div>
           <div class="stack"><span>SonReb</span><span>Impact-Echo</span><span>IRT</span><span>GPR</span><span>Eurocode</span><span>Structural Safety</span></div>
@@ -600,13 +358,13 @@
       <article class="case reveal">
         <div class="case-rail"><span class="idx">02</span><span class="tag">Project Controls</span></div>
         <div class="case-main">
-          <h4>Primary Hospital — Full Project-Controls Package</h4>
+          <h4>Primary Hospital &mdash; Full Project-Controls Package</h4>
           <span class="case-status live">Delivered</span>
-          <p><b>Scope.</b> A complete pre-construction package for a multi-storey hospital building: Work Breakdown Structure, bar-bending schedules, resource summary, ABC inventory classification, environmental management plan, and a 722-day master schedule. <b>Highlights.</b> Resource modelling across ~356 tonnes of reinforcement and 656 MT of cement; ABC analysis showing a small set of items (cement, rebar, steel props, plyboard) driving the majority of an estimated NPR&nbsp;77.9M material cost — focusing procurement attention where it matters.</p>
+          <p><b>Scope.</b> A complete pre-construction package for a multi-storey hospital building: Work Breakdown Structure, bar-bending schedules, resource summary, ABC inventory classification, environmental management plan, and a 722-day master schedule. <b>Highlights.</b> Resource modelling across ~356 tonnes of reinforcement and 656 MT of cement; ABC analysis showing a small set of items driving the majority of an estimated NPR&nbsp;77.9M material cost.</p>
           <div class="case-meta">
             <div><span class="k">Schedule</span>722-day master programme</div>
             <div><span class="k">Est. material value</span>NPR ~77.9M (BOQ)</div>
-            <div><span class="k">Deliverables</span>WBS · BBS · BOQ · ABC · EMP</div>
+            <div><span class="k">Deliverables</span>WBS &middot; BBS &middot; BOQ &middot; ABC &middot; EMP</div>
           </div>
           <div class="stack"><span>MS Project</span><span>BOQ</span><span>ABC Analysis</span><span>WBS</span><span>EHS / EMP</span><span>Scheduling</span></div>
         </div>
@@ -615,8 +373,8 @@
       <article class="case reveal">
         <div class="case-rail"><span class="idx">03</span><span class="tag">Applied Statistics</span></div>
         <div class="case-main">
-          <h4>PCA of Urban Construction Constraints — Kathmandu</h4>
-          <span class="case-status">Ongoing · Research</span>
+          <h4>PCA of Urban Construction Constraints &mdash; Kathmandu</h4>
+          <span class="case-status">Ongoing &middot; Research</span>
           <p><b>Question.</b> What really constrains semi-commercial building projects in a dense metropolitan context? <b>Method.</b> Stakeholder surveys analysed with Principal Component Analysis to isolate the regulatory, technical, financial, and project-management factors that dominate urban development in Kathmandu Metropolitan City. <b>Aim.</b> Give developers and authorities a prioritised, data-backed view of the constraints that move outcomes most.</p>
           <div class="case-meta">
             <div><span class="k">Method</span>Principal Component Analysis</div>
@@ -630,253 +388,75 @@
       <article class="case reveal">
         <div class="case-rail"><span class="idx">04</span><span class="tag">Full Construction</span></div>
         <div class="case-main">
-          <h4>G+4 Residential Building — Baneshwor, Kathmandu</h4>
-          <span class="case-status">Ongoing · Full-construction delivery</span>
-          <p><b>Scope.</b> End-to-end delivery of a five-storey reinforced concrete frame residential building at Surya Bikram Marg, Baneshwor (KMC Ward 31, Plot 449). Total approved floor area of 501.12 sqm across five levels, with vehicle parking at ground level and three identical upper residential floors above. Municipal superstructure permit secured from Kathmandu Metropolitan City (eBPS SS/Resd/082-83/04297-B). <b>Role.</b> As project engineer at Aakar Engineering Consultancy, led full lifecycle delivery: construction planning and execution, municipal approval coordination, structural supervision, reinforcement inspection and QA/QC, contractor management, and progress reporting — from grade beam through to upper floor construction.</p>
+          <h4>G+4 Residential Building &mdash; Baneshwor, Kathmandu</h4>
+          <span class="case-status">Ongoing &middot; Full-construction delivery</span>
+          <p><b>Scope.</b> End-to-end delivery of a five-storey reinforced concrete frame residential building at Surya Bikram Marg, Baneshwor (KMC Ward 31, Plot 449). Total approved floor area of 501.12 sqm across five levels, with vehicle parking at ground level and three identical upper residential floors above. Municipal superstructure permit secured from Kathmandu Metropolitan City (eBPS SS/Resd/082-83/04297-B). <b>Role.</b> As project engineer at Aakar Engineering Consultancy, led full lifecycle delivery: construction planning and execution, municipal approval coordination, structural supervision, reinforcement inspection and QA/QC, contractor management, and progress reporting &mdash; from grade beam through to upper floor construction.</p>
           <div class="case-meta">
-            <div><span class="k">Location</span>Surya Bikram Marg, Baneshwor · KMC Ward 31</div>
-            <div><span class="k">Structure</span>G+4 RCC frame · 5 storeys</div>
+            <div><span class="k">Location</span>Surya Bikram Marg, Baneshwor &middot; KMC Ward 31</div>
+            <div><span class="k">Structure</span>G+4 RCC frame &middot; 5 storeys</div>
             <div><span class="k">Approved area</span>501.12 sqm total</div>
             <div><span class="k">Permit</span>KMC eBPS SS/Resd/082-83/04297-B</div>
           </div>
-
-          <!-- ── Floor areas ── -->
           <div style="margin:20px 0 16px;">
-            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Floor areas · approved</div>
+            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Floor areas &middot; approved</div>
             <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--card);">
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line);background:var(--paper-2);">
-                <div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);">Floor</div>
-                <div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);">FAR countable</div>
-                <div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);">Non-countable</div>
-                <div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);">Total</div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);">
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Ground floor</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">542.76 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">565.09 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,107.85 sq. ft</div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);">
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">First floor</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">1,059.99 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">146.95 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,206.94 sq. ft</div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);">
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Second floor</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">1,059.99 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">146.95 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,206.94 sq. ft</div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);">
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Third floor</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">1,059.99 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">146.95 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,206.94 sq. ft</div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);">
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Fourth floor</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">665.32 sq. ft</div>
-                <div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">—</div>
-                <div style="padding:10px 14px;font-size:13.5px;font-weight:600;">665.32 sq. ft</div>
-              </div>
-              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;background:var(--paper-2);">
-                <div style="padding:11px 14px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);">Site data</div>
-                <div style="padding:11px 14px;font-size:13px;color:var(--graphite);">Plot: 1,670.34 sq. ft</div>
-                <div style="padding:11px 14px;font-size:13px;color:var(--graphite);">Plinth: 1,164.51 sq. ft</div>
-                <div style="padding:11px 14px;font-size:13px;color:var(--graphite);">Parking: 1,090.49 sq. ft (24%)</div>
-              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line);background:var(--paper-2);"><div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;color:var(--muted);">Floor</div><div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;color:var(--muted);">FAR countable</div><div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;color:var(--muted);">Non-countable</div><div style="padding:9px 14px;font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;color:var(--muted);">Total</div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);"><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Ground floor</div><div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">542.76 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">565.09 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,107.85 sq. ft</div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);"><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">First floor</div><div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">1,059.99 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">146.95 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,206.94 sq. ft</div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);"><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Second floor</div><div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">1,059.99 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">146.95 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,206.94 sq. ft</div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);"><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Third floor</div><div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">1,059.99 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">146.95 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">1,206.94 sq. ft</div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--line-soft);"><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">Fourth floor</div><div style="padding:10px 14px;font-size:13.5px;color:var(--graphite);">665.32 sq. ft</div><div style="padding:10px 14px;font-size:13.5px;color:var(--muted);">&mdash;</div><div style="padding:10px 14px;font-size:13.5px;font-weight:600;">665.32 sq. ft</div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;background:var(--paper-2);"><div style="padding:11px 14px;font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;color:var(--muted);">Site data</div><div style="padding:11px 14px;font-size:13px;color:var(--graphite);">Plot: 1,670.34 sq. ft</div><div style="padding:11px 14px;font-size:13px;color:var(--graphite);">Plinth: 1,164.51 sq. ft</div><div style="padding:11px 14px;font-size:13px;color:var(--graphite);">Parking: 1,090.49 sq. ft (24%)</div></div>
             </div>
           </div>
-
-          <!-- ── 3-sheet drawing package ── -->
           <div style="margin:20px 0 16px;">
-            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Drawing package · 3 sheets</div>
+            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Drawing package &middot; 3 sheets</div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);">Arch</span>
-                  <span style="font-size:13px;font-weight:600;">Site, plans, elevations &amp; section</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">01</span>
-                </div>
-                <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                  <li><b style="color:var(--ink);">Site plan</b> — 12’ wide road frontage; 5’ setback line; plinth area 1,164.51 sq. ft; KMC-stamped approval visible</li>
-                  <li><b style="color:var(--ink);">Ground floor plan</b> — 1,107.85 sq. ft; parking bay, room, living room, stair core</li>
-                  <li><b style="color:var(--ink);">First–Third floor plans</b> — 1,206.94 sq. ft each; 2–3 bedrooms, kitchen, living room, W/C, balcony, stair</li>
-                  <li><b style="color:var(--ink);">Fourth floor plan</b> — 665.32 sq. ft; reduced footprint; laundry &amp; store, kitchen/family, terrace</li>
-                  <li><b style="color:var(--ink);">Four elevations</b> — East (primary street facade with ornamental detailing), West, North, South</li>
-                  <li><b style="color:var(--ink);">Section X-X</b> — full building section; parapet at top; all sill &amp; lintel band levels marked</li>
-                  <li><b style="color:var(--ink);">Opening schedule</b> — 60 total openings across 10 types: main doors, sliding doors SD1 (6′×6′6″, ×6), windows W1–W5, ventilators V1, door types D1–D3</li>
-                  <li><b style="color:var(--ink);">Location map</b> — 27°41 29.2″N 85°20 24.8″E · Baneshwor, Ward 31, KMC</li>
-                </ul>
-              </div>
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span>
-                  <span style="font-size:13px;font-weight:600;">Beams, slabs &amp; staircase</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">02</span>
-                </div>
-                <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                  <li><b style="color:var(--ink);">Tie beam plan (TB 9″×9″)</b> — plinth level layout across full column grid</li>
-                  <li><b style="color:var(--ink);">Beam plan GF/1F/2F/3F</b> — primary beams (PB) 9″×12″ and tie beams (TB) 9″×9″ across all spans</li>
-                  <li><b style="color:var(--ink);">Plinth beam sections</b> — 9″×17″ plinth beams along grids D-D and 2-2; full rebar schedule per span</li>
-                  <li><b style="color:var(--ink);">Slab reinforcement</b> — 12mm Ø @ 6″ c/c both ways; top extra bars at X-X &amp; Y-Y; cranked bars detail</li>
-                  <li><b style="color:var(--ink);">Staircase sections</b> — waist slab; 10mm Ø nosing bars; 8mm Ø @ 6″ c/c; landing beam detail</li>
-                  <li><b style="color:var(--ink);">Lintel &amp; sill band</b> — Section Z2-Z2; 450mm CI chicken wire mesh; 12.5mm plaster; 3mm GI anchors @ 300mm c/c staggered</li>
-                  <li><b style="color:var(--ink);">Structural notes</b> — development length, bar splicing (max 50% at one section), lapping rules, clear cover requirements</li>
-                </ul>
-              </div>
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;grid-column:1/-1;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span>
-                  <span style="font-size:13px;font-weight:600;">Foundations, columns &amp; reinforcement details</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">03</span>
-                </div>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
-                  <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;border-right:1px solid var(--line-soft);">
-                    <li><b style="color:var(--ink);">Trench &amp; footing layout</b> — four footing types: F1 (4′×4′-8″), F2 (5′×5′×6″), F3 (5′×5′×6″-4″), CF2 (6′×5′×12″-3″); T12Ø @ 6″ c/c both ways</li>
-                    <li><b style="color:var(--ink);">Column layout plan</b> — C1 type throughout on a 4×5 grid; single corner type CA at E2/E3</li>
-                    <li><b style="color:var(--ink);">Footing section A-A</b> — 75mm PCC, flat brick soling, 50mm sand filling, compacted earth sub-base</li>
-                    <li><b style="color:var(--ink);">Section Z1-Z1</b> — 450mm CI chicken wire; 2.5mm thick plaster; 3mm GI anchors @ 300mm c/c; alternate brick courses</li>
-                    <li><b style="color:var(--ink);">Main &amp; secondary beam connection</b> — 2 nos. Ø16 top bars; section at secondary beam junction</li>
-                    <li><b style="color:var(--ink);">Vertical bar near door detail</b> — additional reinforcement within wall panel adjacent to door opening</li>
-                  </ul>
-                  <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                    <li><b style="color:var(--ink);">Column rebar floor-by-floor</b></li>
-                    <li style="list-style:none;padding-left:12px;color:var(--muted);">Ground — 4-Ø20mm; M25 concrete; Fe 500; 40mm cover</li>
-                    <li style="list-style:none;padding-left:12px;color:var(--muted);">First–Second — 4-Ø20mm; same spec</li>
-                    <li style="list-style:none;padding-left:12px;color:var(--muted);">Third — 4-Ø16–20mm (reducing)</li>
-                    <li style="list-style:none;padding-left:12px;color:var(--muted);">Fourth — 4-Ø16mm</li>
-                    <li><b style="color:var(--ink);">Shear reinforcement</b> — 8mm Ø stirrups @ 100mm c/c; typical lap location for beam bars</li>
-                    <li><b style="color:var(--ink);">Band detail</b> — Section B-B; sill band and lintel band positions relative to floor levels</li>
-                    <li><b style="color:var(--ink);">Sill &amp; lintel section</b> — at 1:20; band reinforcement within masonry wall panel</li>
-                  </ul>
-                </div>
-              </div>
-
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);">Arch</span><span style="font-size:13px;font-weight:600;">Site, plans, elevations &amp; section</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">01</span></div><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Site plan</b> &mdash; 12&rsquo; wide road; 5&rsquo; setback; plinth 1,164.51 sq. ft; KMC-stamped</li><li><b style="color:var(--ink);">Ground&ndash;Fourth floor plans</b> &mdash; all five levels with full room schedules</li><li><b style="color:var(--ink);">Four elevations</b> &mdash; East (ornamental street facade), West, North, South</li><li><b style="color:var(--ink);">Section X-X</b> &mdash; full building section; parapet to plinth; band levels marked</li><li><b style="color:var(--ink);">Opening schedule</b> &mdash; 60 openings; SD1 &times;6, W1&ndash;W5, D1&ndash;D3, V1</li><li><b style="color:var(--ink);">Location map</b> &mdash; 27&deg;41&prime;29.2&Prime;N 85&deg;20&prime;24.8&Prime;E &middot; Baneshwor, Ward 31</li></ul></div>
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span><span style="font-size:13px;font-weight:600;">Beams, slabs &amp; staircase</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">02</span></div><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Beam plan GF/1F/2F/3F</b> &mdash; PB 9&Prime;&times;12&Prime; and TB 9&Prime;&times;9&Prime; across all spans</li><li><b style="color:var(--ink);">Plinth beam sections</b> &mdash; 9&Prime;&times;17&Prime; along grids D-D and 2-2; rebar per span</li><li><b style="color:var(--ink);">Slab reinforcement</b> &mdash; 12mm &Oslash; @ 6&Prime; c/c; cranked bars; top extra at X-X &amp; Y-Y</li><li><b style="color:var(--ink);">Staircase sections</b> &mdash; waist slab; 10mm nosing bars; 8mm @ 6&Prime; c/c</li><li><b style="color:var(--ink);">Lintel &amp; sill band</b> &mdash; Z2-Z2; CI mesh; GI anchors @ 300mm staggered</li></ul></div>
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;grid-column:1/-1;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span><span style="font-size:13px;font-weight:600;">Foundations, columns &amp; reinforcement details</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">03</span></div><div style="display:grid;grid-template-columns:1fr 1fr;"><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;border-right:1px solid var(--line-soft);"><li><b style="color:var(--ink);">Footing types F1&ndash;F5 &amp; CF2</b> &mdash; T12&Oslash; @ 6&Prime; c/c both ways; PCC, flat brick soling, sand fill</li><li><b style="color:var(--ink);">Column layout</b> &mdash; C1 type on 4&times;5 grid; corner type CA at E2/E3</li><li><b style="color:var(--ink);">Main &amp; secondary beam connection</b> &mdash; 2 nos. &Oslash;16 top bars at junction</li></ul><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Column rebar floor-by-floor</b></li><li style="list-style:none;padding-left:12px;color:var(--muted);">Ground&ndash;Second &mdash; 4-&Oslash;20mm; M25; Fe 500; 40mm cover</li><li style="list-style:none;padding-left:12px;color:var(--muted);">Third &mdash; 4-&Oslash;16&ndash;20mm (reducing) &middot; Fourth &mdash; 4-&Oslash;16mm</li><li><b style="color:var(--ink);">Shear reinforcement</b> &mdash; 8mm stirrups @ 100mm c/c; sill &amp; lintel band detail</li></ul></div></div>
             </div>
             <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;">
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Concrete M25</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Steel Fe 500</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Clear cover 40mm</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">PB 9″×12″ · TB 9″×9″ · Plinth beam 9″×17″</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">KMC Ward 31 · Baneshwor</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">3 sheets · A + S1 + S2</span>
+              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Concrete M25</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Steel Fe 500</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">40mm cover</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">PB 9&Prime;&times;12&Prime; &middot; TB 9&Prime;&times;9&Prime; &middot; Plinth 9&Prime;&times;17&Prime;</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">3 sheets &middot; A + S1 + S2</span>
             </div>
           </div>
-
           <div class="stack"><span>RCC Frame Design</span><span>Construction Supervision</span><span>Municipal Approval</span><span>QA / QC</span><span>Reinforcement Inspection</span><span>Contractor Management</span><span>AutoCAD</span><span>ETABS</span></div>
         </div>
       </article>
 
+    </div>
+  </div>
+</section>
       <article class="case reveal">
-        <div class="case-rail"><span class="idx">05</span><span class="tag">Semi-Commercial · Design</span></div>
+        <div class="case-rail"><span class="idx">05</span><span class="tag">Semi-Commercial &middot; Design</span></div>
         <div class="case-main">
-          <h4>G+4 Semi-Commercial Building — Pepsikhola, Kathmandu</h4>
+          <h4>G+4 Semi-Commercial Building &mdash; Pepsikhola, Kathmandu</h4>
           <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-            <span class="case-status" style="margin-bottom:0">Pre-construction approval · Contract received</span>
+            <span class="case-status" style="margin-bottom:0">Pre-construction approval &middot; Contract received</span>
             <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.04em;padding:4px 10px;border-radius:5px;background:color-mix(in srgb,var(--tick) 12%,transparent);color:var(--tick);border:1px solid color-mix(in srgb,var(--tick) 25%,transparent);">NPR 111 M project cost</span>
           </div>
-
-          <p><b>Project.</b> A five-storey semi-commercial RCC frame building on an irregular plot at Pepsikhola, Kathmandu — bounded by a 10'-0" lane to one side and a 26'-0" wide road to the other. The ground floor accommodates two shops with rolling shutters and a vehicle parking bay; upper floors transition into residential use across three typical floors and a reduced fourth floor. Total site area: 2,505.91 sq. ft (0-7-1-1.15 ana). <b>Compliance.</b> Ground coverage 49.11% against a 70% bylaw limit; Floor Area Ratio 2.34 against a permitted 3.5 — both confirmed within municipal limits. <b>Deliverables.</b> A complete four-sheet architectural and structural drawing package produced at Aakar Engineering Consultancy, covering site plan, five floor plans, four elevations, building section, full reinforcement details, and opening schedule.</p>
-
+          <p><b>Project.</b> A five-storey semi-commercial RCC frame building on an irregular plot at Pepsikhola, Kathmandu &mdash; bounded by a 10&rsquo;-0&Prime; lane to one side and a 26&rsquo;-0&Prime; wide road to the other. The ground floor accommodates two shops with rolling shutters and a vehicle parking bay; upper floors transition into residential use across three typical floors and a reduced fourth floor. Total site area: 2,505.91 sq. ft (0-7-1-1.15 ana). <b>Compliance.</b> Ground coverage 49.11% against a 70% bylaw limit; Floor Area Ratio 2.34 against a permitted 3.5 &mdash; both confirmed within municipal limits. <b>Deliverables.</b> A complete four-sheet architectural and structural drawing package produced at Aakar Engineering Consultancy.</p>
           <div class="case-meta">
             <div><span class="k">Location</span>Pepsikhola, Kathmandu</div>
             <div><span class="k">Phase</span>Pre-construction approval</div>
             <div><span class="k">Contract</span>Received</div>
             <div><span class="k">Project cost</span>NPR 111,000,000</div>
-            <div><span class="k">Structure</span>G+4 RCC frame · 5 storeys</div>
+            <div><span class="k">Structure</span>G+4 RCC frame &middot; 5 storeys</div>
             <div><span class="k">Site area</span>2,505.91 sq. ft (0-7-1-1.15 ana)</div>
-            <div><span class="k">Ground coverage</span>49.11% (bylaw max 70%) ✓</div>
-            <div><span class="k">FAR</span>2.34 (bylaw max 3.5) ✓</div>
-            <div><span class="k">Use</span>Shops (GF) + Residential (1F–4F)</div>
+            <div><span class="k">Ground coverage</span>49.11% (bylaw max 70%) &#10003;</div>
+            <div><span class="k">FAR</span>2.34 (bylaw max 3.5) &#10003;</div>
           </div>
-
-          <!-- Drawing package — 4 sheets -->
           <div style="margin:20px 0 16px;">
-            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Drawing package · 4 sheets</div>
+            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">Drawing package &middot; 4 sheets</div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);">Arch</span>
-                  <span style="font-size:13px;font-weight:600;">Site, ground &amp; first floor</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">A1</span>
-                </div>
-                <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                  <li><b style="color:var(--ink);">Site plan</b> — irregular plot 2,505.91 sq. ft; 10'-0" &amp; 26'-0" road frontages; setback lines; GCR &amp; FAR compliance table</li>
-                  <li><b style="color:var(--ink);">Ground floor plan</b> — 1,230.76 sq. ft; 2 shops with rolling shutters, parking bay, room, kitchen, stair core</li>
-                  <li><b style="color:var(--ink);">First floor plan</b> — 1,312.26 sq. ft; living room, 2 bedrooms, kitchen, toilet, stair</li>
-                  <li><b style="color:var(--ink);">East &amp; West elevations</b> — full-height facade with floor-level callouts</li>
-                  <li><b style="color:var(--ink);">Section X-X</b> — full building section from plinth to parapet; all landing levels marked</li>
-                  <li><b style="color:var(--ink);">Opening schedule</b> — 11 types: main door, doors D/D1, windows W1–W4, rolling shutters RS/RS1/RS2</li>
-                </ul>
-              </div>
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);">Arch</span>
-                  <span style="font-size:13px;font-weight:600;">Upper floors &amp; elevations</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">A2</span>
-                </div>
-                <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                  <li><b style="color:var(--ink);">Second floor plan</b> — 1,312.26 sq. ft; living room, 3 bedrooms, kitchen/dining, toilet, stair</li>
-                  <li><b style="color:var(--ink);">Third floor plan</b> — 1,312.26 sq. ft; living room, 3 bedrooms, kitchen/dining, closet, toilet</li>
-                  <li><b style="color:var(--ink);">Fourth floor plan</b> — 708.58 sq. ft; reduced footprint; 2 bedrooms, laundry, terrace access</li>
-                  <li><b style="color:var(--ink);">South &amp; North elevations</b> — full facade with window/shutter positions</li>
-                  <li><b style="color:var(--ink);">Location map</b> — Pepsikhola: way to Bhatke Pul / Naagpokhari / Chantyal Chowk</li>
-                  <li><b style="color:var(--ink);">Opening schedule</b> — full door, window &amp; rolling shutter schedule with sizes</li>
-                </ul>
-              </div>
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span>
-                  <span style="font-size:13px;font-weight:600;">Foundation, columns &amp; details</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">S1</span>
-                </div>
-                <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                  <li><b style="color:var(--ink);">Trench plan</b> — excavation layout across irregular plot</li>
-                  <li><b style="color:var(--ink);">Column layout plan</b> — C1 &amp; C2 (both 16"×16") with floor-wise rebar: ground, first/other, top floors</li>
-                  <li><b style="color:var(--ink);">Footing plans F1–F5</b> — individual pad and strap beam STB; plan and section for each type</li>
-                  <li><b style="color:var(--ink);">Strap beam STB</b> — reinforcement and section at 4-4</li>
-                  <li><b style="color:var(--ink);">Parapet wall section</b> — RCC post and coping detail</li>
-                  <li><b style="color:var(--ink);">Column &amp; stirrup details</b> — splice &amp; ties, vertical section, longitudinal column detail; 135° hook; sill &amp; lintel band</li>
-                </ul>
-              </div>
-
-              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;">
-                <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span>
-                  <span style="font-size:13px;font-weight:600;">Slabs, beams &amp; reinforcement</span>
-                  <span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);letter-spacing:-.02em;">S2</span>
-                </div>
-                <ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;">
-                  <li><b style="color:var(--ink);">Slab reinforcement detail</b> — full plan with bar marks for all bays</li>
-                  <li><b style="color:var(--ink);">Beam plan at +9'-5"</b> — 9"×17" main beams and 9"×12" secondary beams across grids</li>
-                  <li><b style="color:var(--ink);">Beam elevations</b> — along grids A,B,C,D and A,B,C; rebar schedule per span</li>
-                  <li><b style="color:var(--ink);">Beam reinforcement table</b> — all 4 floor levels; intermediate vs end beam; spans &lt;10' &amp; &gt;10'</li>
-                  <li><b style="color:var(--ink);">Stair sections X-X &amp; Y-Y</b> — waist slab, nosing bar, main &amp; distribution bars; chair bar detail</li>
-                  <li><b style="color:var(--ink);">Beam lap &amp; anchorage details</b> — top/bottom bar positions, Ld zones, U-tie at external joint; typical toe wall foundation</li>
-                </ul>
-              </div>
-
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);">Arch</span><span style="font-size:13px;font-weight:600;">Site, ground &amp; first floor</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">A1</span></div><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Site plan</b> &mdash; 2,505.91 sq. ft; 10&rsquo; &amp; 26&rsquo; road frontages; GCR &amp; FAR table</li><li><b style="color:var(--ink);">Ground floor plan</b> &mdash; 1,230.76 sq. ft; 2 shops, parking, kitchen, stair</li><li><b style="color:var(--ink);">First floor plan</b> &mdash; 1,312.26 sq. ft; living, 2 bedrooms, kitchen, W/C</li><li><b style="color:var(--ink);">East &amp; West elevations</b> + Section X-X from plinth to parapet</li><li><b style="color:var(--ink);">Opening schedule</b> &mdash; 11 types; main door, D/D1, W1&ndash;W4, RS/RS1/RS2</li></ul></div>
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);">Arch</span><span style="font-size:13px;font-weight:600;">Upper floors &amp; elevations</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">A2</span></div><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Second floor</b> &mdash; 1,312.26 sq. ft; living, 3 bedrooms, kitchen/dining</li><li><b style="color:var(--ink);">Third floor</b> &mdash; 1,312.26 sq. ft; living, 3 bedrooms, closet, toilet</li><li><b style="color:var(--ink);">Fourth floor</b> &mdash; 708.58 sq. ft; 2 bedrooms, laundry, terrace access</li><li><b style="color:var(--ink);">South &amp; North elevations</b> &mdash; full facade with window/shutter positions</li><li><b style="color:var(--ink);">Location map</b> &mdash; Bhatke Pul / Naagpokhari / Chantyal Chowk</li></ul></div>
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span><span style="font-size:13px;font-weight:600;">Foundation, columns &amp; details</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">S1</span></div><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Trench plan &amp; footing types F1&ndash;F5</b> &mdash; pad + strap beam STB; T12&Oslash; @ 6&Prime; c/c</li><li><b style="color:var(--ink);">Column layout</b> &mdash; C1 &amp; C2 both 16&Prime;&times;16&Prime;; floor-wise rebar schedule</li><li><b style="color:var(--ink);">Column &amp; stirrup details</b> &mdash; 135&deg; hook; splice &amp; ties; sill &amp; lintel band</li><li><b style="color:var(--ink);">Parapet wall section</b> &mdash; RCC post and coping detail</li></ul></div>
+              <div style="border:1px solid var(--line);border-radius:8px;overflow:hidden;"><div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line-soft);background:var(--paper-2);"><span style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:color-mix(in srgb,#2f8f5b 12%,transparent);color:#2f8f5b;">Struct</span><span style="font-size:13px;font-weight:600;">Slabs, beams &amp; reinforcement</span><span style="margin-left:auto;font-family:var(--font-mono);font-size:20px;font-weight:700;color:var(--line);">S2</span></div><ul style="margin:0;padding:10px 14px 10px 28px;display:flex;flex-direction:column;gap:5px;color:var(--graphite);font-size:13px;line-height:1.5;"><li><b style="color:var(--ink);">Beam plan at +9&rsquo;-5&Prime;</b> &mdash; 9&Prime;&times;17&Prime; main and 9&Prime;&times;12&Prime; secondary beams</li><li><b style="color:var(--ink);">Beam elevations</b> &mdash; grids A&ndash;D; rebar schedule per span; 4 floor levels</li><li><b style="color:var(--ink);">Stair sections X-X &amp; Y-Y</b> &mdash; waist slab, nosing bar, distribution bars</li><li><b style="color:var(--ink);">Beam lap &amp; anchorage</b> &mdash; top/bottom bars, Ld zones, U-tie at joint</li></ul></div>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;">
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Fe 500 · fy = 20 MPa</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">AutoCAD</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">ETABS</span>
-              <span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">4 sheets · A1 A2 S1 S2</span>
-            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;"><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">Fe 500 &middot; fy = 20 MPa</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">AutoCAD</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">ETABS</span><span style="font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:4px;padding:4px 9px;color:var(--muted);">4 sheets &middot; A1 A2 S1 S2</span></div>
           </div>
-
-          <div class="stack">
-            <span>RCC Frame Design</span><span>Semi-Commercial</span><span>Structural Design</span>
-            <span>Municipal Compliance</span><span>BOQ / Quantity Surveying</span><span>AutoCAD</span><span>ETABS</span>
-          </div>
+          <div class="stack"><span>RCC Frame Design</span><span>Semi-Commercial</span><span>Structural Design</span><span>Municipal Compliance</span><span>BOQ / Quantity Surveying</span><span>AutoCAD</span><span>ETABS</span></div>
         </div>
       </article>
 
@@ -884,35 +464,31 @@
   </div>
 </section>
 
-<!-- ================= RESEARCH / PUBLICATIONS ================= -->
 <section id="research">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">E.05</span> Publications</div>
     <h2 class="sec reveal">Peer-reviewed research</h2>
     <p class="lead reveal" style="margin-bottom:30px">Published in the International Journal on Engineering Technology (2024).</p>
-
     <div class="reveal">
       <div class="pub">
         <div class="yr">2024</div>
         <div>
-          <h4>Comparative Analysis of Environmental Protection Provisions in Construction Procurement: A Case Study of Nepal's Projects Funded by National and International Agencies</h4>
-          <div class="venue">International Journal on Engineering Technology · Presented at KEC Conference 2024</div>
+          <h4>Comparative Analysis of Environmental Protection Provisions in Construction Procurement: A Case Study of Nepal&rsquo;s Projects Funded by National and International Agencies</h4>
+          <div class="venue">International Journal on Engineering Technology &middot; Presented at KEC Conference 2024</div>
           <a class="doi" href="https://doi.org/10.3126/injet.v1i2.66695" target="_blank" rel="noopener">DOI: 10.3126/injet.v1i2.66695</a>
         </div>
-        <a class="pub-link" href="https://doi.org/10.3126/injet.v1i2.66695" target="_blank" rel="noopener">Read →</a>
+        <a class="pub-link" href="https://doi.org/10.3126/injet.v1i2.66695" target="_blank" rel="noopener">Read &rarr;</a>
       </div>
-
       <div class="pub">
         <div class="yr">2024</div>
         <div>
-          <h4>Evaluating the Alignment between Intended Project Durations and Standard Time–Cost Models: A Comparative Analysis in Basic Hospital Construction Projects in Nepal</h4>
-          <div class="venue">International Journal on Engineering Technology · Presented at KEC Conference 2024</div>
+          <h4>Evaluating the Alignment between Intended Project Durations and Standard Time&ndash;Cost Models: A Comparative Analysis in Basic Hospital Construction Projects in Nepal</h4>
+          <div class="venue">International Journal on Engineering Technology &middot; Presented at KEC Conference 2024</div>
           <a class="doi" href="https://doi.org/10.3126/injet.v1i2.66688" target="_blank" rel="noopener">DOI: 10.3126/injet.v1i2.66688</a>
         </div>
-        <a class="pub-link" href="https://doi.org/10.3126/injet.v1i2.66688" target="_blank" rel="noopener">Read →</a>
+        <a class="pub-link" href="https://doi.org/10.3126/injet.v1i2.66688" target="_blank" rel="noopener">Read &rarr;</a>
       </div>
     </div>
-
     <div class="reveal" style="margin-top:42px">
       <div class="eyebrow"><span class="ref">E.05b</span> Active research &amp; project work</div>
       <div style="display:grid;gap:0;margin-top:6px;">
@@ -939,13 +515,12 @@
           <div>
             <h4>Primary Hospital Construction &mdash; Full Project-Controls Package</h4>
             <div class="venue">Aakar Engineering Consultancy &middot; Delivered</div>
-            <div style="font-family:var(--font-mono);font-size:12px;color:var(--graphite);margin-top:5px;">722-day master schedule, WBS, BBS, BOQ (est. NPR 77.9M materials), ABC inventory analysis, and EMP. Resource modelling across ~356 tonnes of reinforcement and 656 MT of cement for a multi-storey hospital building.</div>
+            <div style="font-family:var(--font-mono);font-size:12px;color:var(--graphite);margin-top:5px;">722-day master schedule, WBS, BBS, BOQ (est. NPR 77.9M materials), ABC inventory analysis, and EMP. Resource modelling across ~356 tonnes of reinforcement and 656 MT of cement.</div>
           </div>
           <a class="pub-link" href="#work">Case 02 &rarr;</a>
         </div>
       </div>
     </div>
-
     <div class="reveal" style="margin-top:42px">
       <div class="eyebrow"><span class="ref">E.06</span> Research interests</div>
       <div class="stack" style="gap:9px">
@@ -955,25 +530,29 @@
   </div>
 </section>
 
-<!-- ================= PROJECT GALLERY ================= -->
 <section id="gallery">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">F.07</span> Project Gallery</div>
     <h2 class="sec reveal">Site &amp; project photos, by year</h2>
-    <p class="lead reveal" style="margin-bottom:34px">A visual record of site visits, construction progress, and fieldwork — organised by year. Click any photo to enlarge.</p>
-
+    <p class="lead reveal" style="margin-bottom:34px">A visual record of site visits, construction progress, and fieldwork &mdash; organised by year. Click any photo to enlarge.</p>
     <div class="reveal">
       <div class="gal-tabs" id="galTabs" role="tablist" aria-label="Select year"></div>
       <div class="gal-albums" id="galAlbums" role="tablist" aria-label="Select album"></div>
-      <div class="gal-toolbar">
-        <div class="gal-year-label" id="galYearLabel"></div>
-      </div>
+      <div class="gal-toolbar"><div class="gal-year-label" id="galYearLabel"></div></div>
       <div id="galStage"></div>
     </div>
   </div>
 </section>
 
-<!-- ================= EDUCATION + CREDENTIALS ================= -->
+<section id="visits">
+  <div class="wrap">
+    <div class="eyebrow reveal"><span class="ref">F.08</span> Foreign Visits</div>
+    <h2 class="sec reveal">International exposure</h2>
+    <p class="lead reveal" style="margin-bottom:40px">Professional visits, conferences, study tours, and knowledge-exchange trips beyond Nepal.</p>
+    <div id="visitsStage" class="reveal"></div>
+  </div>
+</section>
+
 <section id="education">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">G.08</span> Education &amp; Credentials</div>
@@ -981,37 +560,20 @@
     <div class="two-col">
       <div class="reveal">
         <div class="eyebrow" style="margin-bottom:18px"><span class="ref">G.08a</span> Education</div>
-        <div class="edu-item">
-          <h4>Bachelor of Civil Engineering</h4>
-          <div class="meta">Himalaya College of Engineering · Tribhuvan University · 2020–2024</div>
-          <div class="res">GPA <b>3.18 / 4.00</b> (WES) · 64.14% · Second Division · 130 credits</div>
-        </div>
-        <div class="edu-item">
-          <h4>US Equivalency — Bachelor's Degree</h4>
-          <div class="meta">World Education Services (WES) · Ref# 7114989 · Oct 2025</div>
-          <div class="res">Verified as equivalent to a <b>regionally accredited US bachelor's degree</b>.</div>
-        </div>
-        <div class="edu-item">
-          <h4>Higher Secondary (Science)</h4>
-          <div class="meta">Himalayan Whitehouse Int'l School · NEB · 2017–2019</div>
-          <div class="res">CGPA <b>3.12</b></div>
-        </div>
-        <div class="edu-item">
-          <h4>Secondary Education (SEE)</h4>
-          <div class="meta">Shramik Shanti Secondary School · 2017</div>
-          <div class="res">GPA <b>3.65</b></div>
-        </div>
+        <div class="edu-item"><h4>Bachelor of Civil Engineering</h4><div class="meta">Himalaya College of Engineering &middot; Tribhuvan University &middot; 2020&ndash;2024</div><div class="res">GPA <b>3.18 / 4.00</b> (WES) &middot; 64.14% &middot; Second Division &middot; 130 credits</div></div>
+        <div class="edu-item"><h4>US Equivalency &mdash; Bachelor&rsquo;s Degree</h4><div class="meta">World Education Services (WES) &middot; Ref# 7114989 &middot; Oct 2025</div><div class="res">Verified as equivalent to a <b>regionally accredited US bachelor&rsquo;s degree</b>.</div></div>
+        <div class="edu-item"><h4>Higher Secondary (Science)</h4><div class="meta">Himalayan Whitehouse Int&rsquo;l School &middot; NEB &middot; 2017&ndash;2019</div><div class="res">CGPA <b>3.12</b></div></div>
+        <div class="edu-item"><h4>Secondary Education (SEE)</h4><div class="meta">Shramik Shanti Secondary School &middot; 2017</div><div class="res">GPA <b>3.65</b></div></div>
       </div>
-
       <div class="reveal">
         <div class="eyebrow" style="margin-bottom:18px"><span class="ref">G.08b</span> Licences &amp; training</div>
         <div class="cred-list">
-          <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>Registered Engineer — Nepal Engineering Council</b><span>Civil Engineering · Registration No. 86274</span></span></div>
-          <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>Aakar Engineering Consultancy Pvt. Ltd.</b><span>Registered company · No. 356769/81/82</span></span></div>
+          <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>Registered Engineer &mdash; Nepal Engineering Council</b><span>Civil Engineering &middot; Registration No. 86274</span></span></div>
+          <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>Aakar Engineering Consultancy Pvt. Ltd.</b><span>Registered company &middot; No. 356769/81/82</span></span></div>
           <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>Fixed Asset Valuation Training</b><span>Professional training</span></span></div>
           <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>Real Estate Development &amp; Valuation Training</b><span>Professional training</span></span></div>
           <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>LaTeX Technical Documentation Training</b><span>Professional training</span></span></div>
-          <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>FIDIC Asia Pacific Conference — Nepal</b><span>Governance for Climate Shocks · Kathmandu</span></span></div>
+          <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>FIDIC Asia Pacific Conference &mdash; Nepal</b><span>Governance for Climate Shocks &middot; Kathmandu</span></span></div>
           <div class="cred"><span class="cyr">2024</span><span class="cwhat"><b>KEC Conference 2024</b><span>Presented two papers</span></span></div>
           <div class="cred"><span class="cyr">2022</span><span class="cwhat"><b>AutoCAD Basics</b><span>Himalaya Civil Club</span></span></div>
         </div>
@@ -1020,41 +582,23 @@
   </div>
 </section>
 
-<!-- ================= LEADERSHIP ================= -->
 <section id="leadership">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">H.09</span> Leadership &amp; Community</div>
     <h2 class="sec reveal">Beyond the drawings</h2>
     <div class="lead-grid">
-      <div class="lead-card reveal">
-        <div class="role">Vice President · 2023–2024</div>
-        <h4>Himalaya Civil Club</h4>
-        <p>Led the organisation of the Himalaya Exhibition (HEX), the college's flagship technical festival, and coordinated technical workshops, competitions, and student outreach.</p>
-      </div>
-      <div class="lead-card reveal">
-        <div class="role">Treasurer · 2080 BS</div>
-        <h4>Himalaya Civil Club</h4>
-        <p>Managed the club's finances and supported its service and contribution activities across the engineering student community.</p>
-      </div>
-      <div class="lead-card reveal">
-        <div class="role">Recognition</div>
-        <h4>Annual Sports Week 2024</h4>
-        <p>Second position, Volleyball — Himalaya College of Engineering.</p>
-      </div>
-      <div class="lead-card reveal">
-        <div class="role">Recognition · 2019</div>
-        <h4>Trinity Inter-College SciTech</h4>
-        <p>Letter of Appreciation for participation in the 8th Trinity Inter-College SciTech Exhibition-cum-Competition.</p>
-      </div>
+      <div class="lead-card reveal"><div class="role">Vice President &middot; 2023&ndash;2024</div><h4>Himalaya Civil Club</h4><p>Led the organisation of the Himalaya Exhibition (HEX), the college&rsquo;s flagship technical festival, and coordinated technical workshops, competitions, and student outreach.</p></div>
+      <div class="lead-card reveal"><div class="role">Treasurer &middot; 2080 BS</div><h4>Himalaya Civil Club</h4><p>Managed the club&rsquo;s finances and supported its service and contribution activities across the engineering student community.</p></div>
+      <div class="lead-card reveal"><div class="role">Recognition</div><h4>Annual Sports Week 2024</h4><p>Second position, Volleyball &mdash; Himalaya College of Engineering.</p></div>
+      <div class="lead-card reveal"><div class="role">Recognition &middot; 2019</div><h4>Trinity Inter-College SciTech</h4><p>Letter of Appreciation for participation in the 8th Trinity Inter-College SciTech Exhibition-cum-Competition.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
 <section id="contact" style="border-bottom:none">
   <div class="wrap">
     <div class="eyebrow reveal"><span class="ref">I.10</span> Contact</div>
-    <h2 class="sec reveal">Let's build something rigorous.</h2>
+    <h2 class="sec reveal">Let&rsquo;s build something rigorous.</h2>
     <p class="lead reveal" style="margin-bottom:40px">Open to structural design, condition assessment, project-controls, and research collaboration. The quickest way to reach me is email.</p>
     <div class="contact-grid">
       <div class="reveal">
@@ -1069,35 +613,30 @@
         </div>
       </div>
       <div class="reveal">
-        <!-- Static front-end form. Wire the action to Formspree/your backend, or it falls back to opening email. -->
         <form id="contactForm" novalidate>
           <div class="field"><label for="cname">Name</label><input id="cname" name="name" type="text" autocomplete="name" required /></div>
           <div class="field"><label for="cemail">Email</label><input id="cemail" name="email" type="email" autocomplete="email" required /></div>
           <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" name="message" required></textarea></div>
-          <button class="btn solid" type="submit">Send message
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </button>
+          <button class="btn solid" type="submit">Send message <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
           <p id="formNote" style="font-family:var(--font-mono);font-size:12px;color:var(--muted);margin:14px 0 0"></p>
         </form>
       </div>
     </div>
   </div>
 </section>
-
 </main>
 
 <footer>
   <div class="wrap foot-in">
-    <span>© <span id="yr"></span> Sagar Acharya · Er. · NEC 86274</span>
-    <span>Built as a structural drawing — grid, ink &amp; load paths.</span>
+    <span>&copy; <span id="yr"></span> Sagar Acharya &middot; Er. &middot; NEC 86274</span>
+    <span>Built as a structural drawing &mdash; grid, ink &amp; load paths.</span>
   </div>
 </footer>
 
-<!-- ================= LIGHTBOX ================= -->
 <div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Photo viewer">
   <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
   <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
-  <img id="lbImg" alt="Enlarged project photo" />
+  <img id="lbImg" alt="Enlarged photo" />
   <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
   <div class="lb-cap" id="lbCap"></div>
 </div>
@@ -1106,25 +645,6 @@
 /* ===== Project Gallery ===== */
 (function(){
   "use strict";
-
-  /* =====================================================================
-     HOW TO ADD PHOTOS — two structures supported:
-
-     FLAT year (simple list of photos):
-       "2025": [
-         {src:"images/2025/site-visit.jpg", caption:"Foundation works, Nuwakot"}
-       ],
-
-     ALBUM year (named sub-sections inside a year):
-       "2024": {
-         "FIDIC Asia Pacific Conference Nepal 2024": [
-           {src:"conference-overview.jpg", caption:"Conference banner, Hyatt Regency"}
-         ],
-         "KEC Conference 2024": [
-           {src:"kec-paper.jpg", caption:"Paper presentation"}
-         ]
-       },
-     ===================================================================== */
   var GALLERY={
     "2025":{
       "Residential Building \u2014 Baneshwor":{
@@ -1137,29 +657,32 @@
           {src:"upper-floor-construction.jpg",    caption:"Upper floor construction in progress \u2014 column starter bars and beam formwork"}
         ]
       },
-      "South Korea Infrastructure & Cultural Exploration Tour (April 2025)":{
-        description:"A ten-day professional and cultural exploration tour across South Korea from April 7\u201317, 2025 (Seoul \u2013 Mokpo \u2013 Yeongam County). The visit provided firsthand exposure to advanced transportation infrastructure, urban development, industrial construction, and sustainable engineering practices. Key highlights included visits to N Seoul Tower and Lotte World Tower in Seoul, a roadway journey to Mokpo showcasing South Korea's highly efficient expressway network with noise barriers and green infrastructure, and observation of Hyundai Heavy Industries' large-scale shipbuilding facilities in the Mokpo\u2013Yeongam industrial region. The experience strengthened my understanding of smart infrastructure systems, sustainable urban development, transportation engineering, and industrial construction technologies.",
+      "South Korea \u2014 Infrastructure Tour (April 2025)":{
+        description:"A ten-day professional and cultural exploration tour across South Korea from April 7\u201317, 2025 (Seoul \u2013 Mokpo \u2013 Yeongam County). The visit provided firsthand exposure to advanced transportation infrastructure, urban development, industrial construction, and sustainable engineering practices. Key highlights included N Seoul Tower, Lotte World Tower, South Korea\u2019s highly efficient expressway network with noise barriers and green infrastructure, and Hyundai Heavy Industries\u2019 large-scale shipbuilding facilities near Mokpo\u2013Yeongam.",
         photos:[
-          {src:"seoul-expressway.jpg",     caption:"Urban expressway corridor in Seoul featuring green noise barriers and sustainable transportation infrastructure"},
-          {src:"road-maintenance.jpg",     caption:"Night-time roadway maintenance operations demonstrating infrastructure asset management practices"},
+          {src:"seoul-expressway.jpg",     caption:"Urban expressway corridor in Seoul \u2014 green noise barriers and sustainable transportation infrastructure"},
+          {src:"road-maintenance.jpg",     caption:"Night-time roadway maintenance operations \u2014 infrastructure asset management practices"},
           {src:"yeongam-hiking-trail.jpg", caption:"Hiking trail infrastructure in Yeongam County during regional exploration"},
-          {src:"historic-landmark.jpg",    caption:"Cultural heritage landmark highlighting South Korea's historical and architectural legacy"},
+          {src:"historic-landmark.jpg",   caption:"Cultural heritage landmark \u2014 South Korea\u2019s historical and architectural legacy"},
           {src:"n-seoul-tower.jpg",        caption:"N Seoul Tower"},
           {src:"From-seoul-tower.jpg",     caption:"Seoul Tower overlooking the metropolitan skyline and urban development of Seoul"},
-          {src:"lotte-world-tower.jpg",    caption:"Visit to Lotte World Tower \u2014 world-class high-rise engineering and urban density management"},
-          {src:"hyundai-shipyard.jpg",     caption:"View of Hyundai Heavy Industries shipbuilding facilities in the Mokpo\u2013Yeongam industrial region"},
-          {src:"urban-construction.jpg",   caption:"Ongoing high-rise construction project observed within Seoul's rapidly evolving urban landscape"}
+          {src:"lotte-world-tower.jpg",    caption:"Lotte World Tower \u2014 world-class high-rise engineering and urban density management"},
+          {src:"hyundai-shipyard.jpg",     caption:"Hyundai Heavy Industries shipbuilding facilities \u2014 Mokpo\u2013Yeongam industrial region"},
+          {src:"urban-construction.jpg",   caption:"Ongoing high-rise construction observed within Seoul\u2019s rapidly evolving urban landscape"}
         ]
-      }
+      },
+      "Susta Embankment":[
+        {src:"images/2025/susta-enbankment.jpg", caption:"Susta Embankment"}
+      ]
     },
     "2024":{
       "FIDIC Asia Pacific Conference Nepal 2024":{
         description:"Participated in the FIDIC Asia Pacific Conference Nepal 2024, themed \u201cGovernance for Climate Shocks,\u201d engaging with international experts and engineering professionals on climate resilience, sustainable infrastructure, disaster risk management, and governance strategies. The conference provided a platform for knowledge exchange, professional networking, and exploring innovative solutions for climate-adaptive infrastructure development across the Asia-Pacific region.",
         photos:[
-          {src:"conference-overview.jpg",     caption:"FIDIC Asia Pacific Conference 2024 \u2014 Governance for Climate Shocks \u00b7 Hyatt Regency, Kathmandu"},
-          {src:"distinguished-delegates.jpg", caption:"With FIDIC President Er. Catherine Karakatsanis and distinguished delegates from across the Asia Pacific region"},
-          {src:"FIDIC-President.jpg",         caption:"With FIDIC President Er. Catherine Karakatsanis \u2014 a privilege to exchange ideas on climate governance and resilient infrastructure"},
-          {src:"national-networking.jpg",     caption:"Panel session with national delegates, scholars, and consulting professionals \u00b7 FIDIC Asia Pacific 2024"}
+          {src:"conference-overview.jpg",      caption:"FIDIC Asia Pacific Conference 2024 \u2014 Governance for Climate Shocks \u00b7 Hyatt Regency, Kathmandu"},
+          {src:"distinguished-delegates.jpg",  caption:"With FIDIC President Er. Catherine Karakatsanis and distinguished delegates from across the Asia Pacific region"},
+          {src:"FIDIC-President.jpg",          caption:"With FIDIC President Er. Catherine Karakatsanis \u2014 a privilege to exchange ideas on climate governance and resilient infrastructure"},
+          {src:"national-networking.jpg",      caption:"Panel session with national delegates, scholars, and consulting professionals \u00b7 FIDIC Asia Pacific 2024"}
         ]
       }
     },
@@ -1167,11 +690,8 @@
     "2022":[]
   };
 
-  /* helpers — albums support two shapes:
-     array  → plain list of photos, no description
-     object → { description:"...", photos:[...] }   ← use this for albums with a note */
-  function isAlbum(y){ var v=GALLERY[y]; return v&&!Array.isArray(v)&&typeof v==="object"; }
-  function albumKeys(y){ return isAlbum(y)?Object.keys(GALLERY[y]):[]; }
+  function isAlbum(y){var v=GALLERY[y];return v&&!Array.isArray(v)&&typeof v==="object";}
+  function albumKeys(y){return isAlbum(y)?Object.keys(GALLERY[y]):[]; }
   function albumPhotos(y,album){
     if(!isAlbum(y)) return GALLERY[y]||[];
     var entry=GALLERY[y][album];
@@ -1181,11 +701,11 @@
   function albumDesc(y,album){
     if(!isAlbum(y)) return null;
     var entry=GALLERY[y][album];
-    return (entry&&!Array.isArray(entry))?entry.description||null:null;
+    return(entry&&!Array.isArray(entry))?entry.description||null:null;
   }
   function totalCount(y){
     if(isAlbum(y)) return albumKeys(y).reduce(function(s,k){return s+albumPhotos(y,k).length;},0);
-    return (GALLERY[y]||[]).length;
+    return(GALLERY[y]||[]).length;
   }
 
   var YEARS=Object.keys(GALLERY).sort(function(a,b){return Number(b)-Number(a);});
@@ -1194,7 +714,6 @@
       stage=document.getElementById("galStage"),
       label=document.getElementById("galYearLabel");
   if(!tabsEl) return;
-
   var curYear=YEARS[0];
   var curAlbum=isAlbum(curYear)?albumKeys(curYear)[0]:null;
 
@@ -1206,10 +725,9 @@
       b.className="gal-tab"+(y===curYear?" active":"");
       b.setAttribute("role","tab");
       b.setAttribute("aria-selected",y===curYear?"true":"false");
-      b.innerHTML=y+(n?'<span class="cnt">'+n+'</span>':'')+'';
+      b.innerHTML=y+(n?'<span class="cnt">'+n+'</span>':'');
       b.addEventListener("click",function(){
-        curYear=y;
-        curAlbum=isAlbum(y)?albumKeys(y)[0]:null;
+        curYear=y; curAlbum=isAlbum(y)?albumKeys(y)[0]:null;
         renderYearTabs(); renderAlbumBar(); renderStage();
       });
       tabsEl.appendChild(b);
@@ -1219,7 +737,7 @@
   function renderAlbumBar(){
     albumBar.innerHTML="";
     var albums=albumKeys(curYear);
-    if(!albums.length){ albumBar.classList.remove("visible"); return; }
+    if(!albums.length){albumBar.classList.remove("visible");return;}
     albumBar.classList.add("visible");
     albums.forEach(function(album){
       var n=albumPhotos(curYear,album).length;
@@ -1227,10 +745,8 @@
       b.className="gal-album-tab"+(album===curAlbum?" active":"");
       b.setAttribute("role","tab");
       b.setAttribute("aria-selected",album===curAlbum?"true":"false");
-      b.innerHTML=album+(n?'<span class="cnt">'+n+'</span>':'')+'';
-      b.addEventListener("click",function(){
-        curAlbum=album; renderAlbumBar(); renderStage();
-      });
+      b.innerHTML=album+(n?'<span class="cnt">'+n+'</span>':'');
+      b.addEventListener("click",function(){curAlbum=album;renderAlbumBar();renderStage();});
       albumBar.appendChild(b);
     });
   }
@@ -1241,24 +757,15 @@
     var heading=curAlbum||curYear;
     label.innerHTML=heading+' <small>'+list.length+' photo'+(list.length===1?'':'s')+'</small>';
     stage.innerHTML="";
-    if(desc){
-      var d=document.createElement("p");
-      d.className="gal-album-desc";
-      d.textContent=desc;
-      stage.appendChild(d);
-    }
+    if(desc){var d=document.createElement("p");d.className="gal-album-desc";d.textContent=desc;stage.appendChild(d);}
     if(!list.length){
-      var empty=document.createElement("div");
-      empty.className="gal-empty";
+      var empty=document.createElement("div");empty.className="gal-empty";
       empty.innerHTML='<h4>Photos coming soon</h4><p>Photos for '+(curAlbum||curYear)+' will appear here.</p>';
-      stage.appendChild(empty);
-      return;
+      stage.appendChild(empty);return;
     }
-    var grid=document.createElement("div");
-    grid.className="gal-grid";
+    var grid=document.createElement("div"); grid.className="gal-grid";
     list.forEach(function(it,i){
-      var t=document.createElement("div");
-      t.className="gal-tile";
+      var t=document.createElement("div");t.className="gal-tile";
       t.innerHTML='<img src="'+it.src+'" alt="'+(it.caption||'Project photo')+'" loading="lazy" />'+
                   (it.caption?'<div class="gal-cap">'+it.caption+'</div>':'');
       t.querySelector("img").addEventListener("click",function(){openLB(list,i);});
@@ -1267,10 +774,7 @@
     stage.appendChild(grid);
   }
 
-  /* ---- lightbox ---- */
-  var lb=document.getElementById("lb"),
-      lbImg=document.getElementById("lbImg"),
-      lbCap=document.getElementById("lbCap");
+  var lb=document.getElementById("lb"),lbImg=document.getElementById("lbImg"),lbCap=document.getElementById("lbCap");
   var lbList=[],lbIdx=0;
   function openLB(list,i){lbList=list;lbIdx=i;showLB();lb.classList.add("open");document.body.style.overflow="hidden";}
   function showLB(){var it=lbList[lbIdx];lbImg.src=it.src;lbCap.textContent=it.caption||"";}
@@ -1287,17 +791,150 @@
     else if(e.key==="ArrowRight")navLB(1);
   });
 
+  window.PageLB={
+    open:function(list,i){lbList=list;lbIdx=i;showLB();lb.classList.add("open");document.body.style.overflow="hidden";},
+    close:closeLB
+  };
+
   renderYearTabs(); renderAlbumBar(); renderStage();
+})();
+</script>
+
+<script>
+/* ===== Foreign Visits ===== */
+(function(){
+  "use strict";
+
+  /* =====================================================================
+     HOW TO ADD A VISIT:
+     Add an entry to FOREIGN_VISITS below, then upload photo files to
+     GitHub and list them in the photos array.
+
+     Entry format:
+     {
+       destination: "New Delhi, India",
+       flag: "paste flag emoji here",
+       date: "March 2025",
+       purpose: "Study Tour",
+       description: "Brief account of the trip.",
+       photos: [
+         {src: "delhi-1.jpg", caption: "India Gate, New Delhi"}
+       ]
+     }
+
+     Flag emojis to copy:
+       India        \uD83C\uDDEE\uD83C\uDDF3
+       China        \uD83C\uDDE8\uD83C\uDDF3
+       Thailand     \uD83C\uDDF9\uD83C\uDDED
+       Japan        \uD83C\uDDEF\uD83C\uDDF5
+       USA          \uD83C\uDDFA\uD83C\uDDF8
+       UK           \uD83C\uDDEC\uD83C\uDDE7
+       Australia    \uD83C\uDDE6\uD83C\uDDFA
+       Singapore    \uD83C\uDDF8\uD83C\uDDEC
+       UAE          \uD83C\uDDE6\uD83C\uDDEA
+       Germany      \uD83C\uDDE9\uD83C\uDDEA
+       South Korea  \uD83C\uDDF0\uD83C\uDDF7
+       Nepal        \uD83C\uDDF3\uD83C\uDDF5
+     ===================================================================== */
+  var FOREIGN_VISITS=[
+    {
+      destination:"South Korea",
+      flag:"\uD83C\uDDF0\uD83C\uDDF7",
+      date:"April 7\u201317, 2025",
+      purpose:"Study & Infrastructure Exploration Tour",
+      description:"During a ten-day visit across South Korea (Seoul \u2013 Mokpo \u2013 Yeongam County), I explored the country\u2019s advanced urban infrastructure, transportation systems, construction practices, and industrial facilities. The trip provided firsthand exposure to large-scale engineering projects, sustainable urban development, and modern construction technologies, reinforcing my research interests in smart infrastructure, construction management, and resilient urban systems. Key highlights included N Seoul Tower and Lotte World Tower (high-rise construction and urban density), South Korea\u2019s highly efficient expressway systems with noise barriers and green infrastructure, and Hyundai Heavy Industries\u2019 shipbuilding facilities near Mokpo\u2013Yeongam, witnessing large-scale marine and industrial construction operations.",
+      video:{
+        type:"local",
+        src:"lotte-tower-view.mp4",
+        caption:"Looking down from Lotte World Tower, Seoul \u2014 555m above the city"
+      },
+      photos:[
+        {src:"seoul-expressway.jpg",     caption:"Urban expressway corridor in Seoul \u2014 advanced noise barriers and green infrastructure integration"},
+        {src:"road-maintenance.jpg",     caption:"Night-time roadway maintenance and infrastructure operations, Seoul"},
+        {src:"yeongam-hiking-trail.jpg", caption:"Hiking trail and recreational infrastructure \u2014 Yeongam County"},
+        {src:"historic-landmark.jpg",   caption:"Cultural heritage landmark encountered during regional exploration"},
+        {src:"n-seoul-tower.jpg",        caption:"N Seoul Tower"},
+        {src:"From-seoul-tower.jpg",     caption:"Seoul Tower overlooking the metropolitan skyline and urban development of Seoul"},
+        {src:"lotte-world-tower.jpg",    caption:"Personal visit to Lotte World Tower \u2014 one of the world\u2019s tallest skyscrapers"},
+        {src:"hyundai-shipyard.jpg",     caption:"Hyundai Heavy Industries shipbuilding facilities observed from hiking viewpoint near Mokpo\u2013Yeongam"},
+        {src:"urban-construction.jpg",   caption:"Urban construction activity highlighting ongoing development in Seoul"}
+      ]
+    }
+    /* add more visits here */
+  ];
+
+  var stage=document.getElementById("visitsStage");
+  if(!stage) return;
+
+  if(!FOREIGN_VISITS.length){
+    stage.innerHTML='<div class="visits-empty"><h4>Coming soon</h4><p>International visits, study tours, and professional travel will be documented here.</p></div>';
+    return;
+  }
+
+  stage.classList.add("visit-grid");
+
+  FOREIGN_VISITS.forEach(function(visit,vi){
+    var photos=visit.photos||[];
+    var card=document.createElement("div"); card.className="visit-card";
+
+    var header='<div class="visit-header">'+
+      '<div class="visit-flag">'+(visit.flag||'\uD83C\uDF0D')+'</div>'+
+      '<div class="visit-info">'+
+        '<div class="visit-dest">'+visit.destination+'</div>'+
+        '<div class="visit-badges">'+
+          (visit.date?'<span class="visit-date">'+visit.date+'</span>':'')+
+          (visit.purpose?'<span class="visit-purpose">'+visit.purpose+'</span>':'')+
+        '</div>'+
+      '</div>'+
+    '</div>';
+
+    var hasPhotos=photos.length>0;
+    var hasVideo=!!(visit.video&&visit.video.src);
+
+    var desc=visit.description?
+      '<div class="visit-desc"'+(hasPhotos||hasVideo?'':' style="border-bottom:none"')+'>'+visit.description+'</div>':'';
+
+    var videoBlock='';
+    if(hasVideo){
+      var vSrc=visit.video.src, vCap=visit.video.caption||''
+      var vMedia=(visit.video.type==='youtube')?
+        '<iframe src="'+vSrc+'" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>':
+        '<video controls playsinline preload="metadata"><source src="'+vSrc+'" type="video/mp4">Your browser does not support HTML5 video.</video>';
+      videoBlock='<div class="visit-video"'+(hasPhotos?'':' style="border-bottom:none"')+'><div class="visit-video-inner">'+vMedia+'</div>'+(vCap?'<div class="visit-video-cap">'+vCap+'</div>':'')+ '</div>';
+    }
+
+    var photoGrid='';
+    if(hasPhotos){
+      photoGrid='<div class="visit-photos">';
+      photos.forEach(function(p,pi){
+        photoGrid+='<div class="visit-photo-tile" data-vi="'+vi+'" data-pi="'+pi+'">'+
+          '<img src="'+p.src+'" alt="'+(p.caption||visit.destination)+'" loading="lazy" />'+
+          (p.caption?'<div class="visit-photo-cap">'+p.caption+'</div>':'')+
+        '</div>';
+      });
+      photoGrid+='</div>';
+    }
+
+    card.innerHTML=header+desc+videoBlock+photoGrid;
+
+    card.querySelectorAll(".visit-photo-tile").forEach(function(tile){
+      tile.addEventListener("click",function(){
+        var vi2=parseInt(tile.dataset.vi);
+        var pi2=parseInt(tile.dataset.pi);
+        if(window.PageLB) window.PageLB.open(FOREIGN_VISITS[vi2].photos,pi2);
+      });
+    });
+
+    stage.appendChild(card);
+  });
 })();
 </script>
 
 <script>
 (function(){
   "use strict";
-
-  /* ---- theme ---- */
-  var root=document.documentElement, tBtn=document.getElementById("themeBtn"),
-      sun=document.getElementById("iconSun"), moon=document.getElementById("iconMoon");
+  var root=document.documentElement,tBtn=document.getElementById("themeBtn"),
+      sun=document.getElementById("iconSun"),moon=document.getElementById("iconMoon");
   function setTheme(t){
     root.setAttribute("data-theme",t);
     var dark=t==="dark";
@@ -1307,55 +944,43 @@
     document.querySelector('meta[name=theme-color]').setAttribute("content",dark?"#0F1115":"#FBFAF8");
   }
   var saved="light";
-  try{saved=localStorage.getItem("sa-theme")|| (matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");}catch(e){}
+  try{saved=localStorage.getItem("sa-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");}catch(e){}
   setTheme(saved);
   tBtn.addEventListener("click",function(){setTheme(root.getAttribute("data-theme")==="dark"?"light":"dark");});
-
-  /* ---- mobile menu ---- */
-  var menuBtn=document.getElementById("menuBtn"), links=document.getElementById("navlinks");
+  var menuBtn=document.getElementById("menuBtn"),links=document.getElementById("navlinks");
   menuBtn.addEventListener("click",function(){
     var open=links.classList.toggle("open");
     menuBtn.setAttribute("aria-expanded",open?"true":"false");
   });
-  links.addEventListener("click",function(e){ if(e.target.tagName==="A"){links.classList.remove("open");} });
-
-  /* ---- active section in nav ---- */
+  links.addEventListener("click",function(e){if(e.target.tagName==="A")links.classList.remove("open");});
   var navAs=Array.prototype.slice.call(links.querySelectorAll("a"));
   var map={};
   navAs.forEach(function(a){var id=a.getAttribute("href").slice(1);var s=document.getElementById(id);if(s)map[id]=a;});
   var secObs=new IntersectionObserver(function(entries){
     entries.forEach(function(en){
-      if(en.isIntersecting){
-        navAs.forEach(function(a){a.classList.remove("active");});
-        var a=map[en.target.id]; if(a)a.classList.add("active");
-      }
+      if(en.isIntersecting){navAs.forEach(function(a){a.classList.remove("active");});var a=map[en.target.id];if(a)a.classList.add("active");}
     });
   },{rootMargin:"-45% 0px -50% 0px"});
   Object.keys(map).forEach(function(id){secObs.observe(document.getElementById(id));});
-
-  /* ---- reveal on scroll ---- */
   var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
   var rev=document.querySelectorAll(".reveal");
   if(reduce){rev.forEach(function(el){el.classList.add("in");});}
   else{
     var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);} });
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});
     },{threshold:0.12});
     rev.forEach(function(el){io.observe(el);});
   }
-
-  /* ---- contact form (graceful fallback to mailto) ---- */
-  var form=document.getElementById("contactForm"), note=document.getElementById("formNote");
+  var form=document.getElementById("contactForm"),note=document.getElementById("formNote");
   form.addEventListener("submit",function(e){
     e.preventDefault();
-    var n=form.name.value.trim(), em=form.email.value.trim(), m=form.message.value.trim();
+    var n=form.name.value.trim(),em=form.email.value.trim(),m=form.message.value.trim();
     if(!n||!em||!m){note.textContent="Please fill in every field.";return;}
     var subject=encodeURIComponent("Website enquiry from "+n);
-    var body=encodeURIComponent(m+"\n\n— "+n+" ("+em+")");
+    var body=encodeURIComponent(m+"\n\n\u2014 "+n+" ("+em+")");
     window.location.href="mailto:er.sagaracharya@gmail.com?subject="+subject+"&body="+body;
-    note.textContent="Opening your email app… if nothing happens, write to er.sagaracharya@gmail.com directly.";
+    note.textContent="Opening your email app\u2026 if nothing happens, write to er.sagaracharya@gmail.com directly.";
   });
-
   document.getElementById("yr").textContent=new Date().getFullYear();
 })();
 </script>
