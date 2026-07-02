@@ -9,6 +9,7 @@
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Sagar Acharya — Civil &amp; Structural Engineer" />
 <meta property="og:description" content="Registered civil engineer (NEC 86274), consultancy founder, and infrastructure researcher based in Nepal." />
+<meta property="og:image" content="PP.jpeg" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#FBFAF8" />
@@ -16,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Sagar Acharya","honorificPrefix":"Er.","jobTitle":"Civil & Structural Engineer","email":"er.sagaracharya@gmail.com","telephone":"+977-9867853747","nationality":"Nepali","address":{"@type":"PostalAddress","addressLocality":"Kathmandu","addressCountry":"Nepal"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Himalaya College of Engineering, Tribhuvan University"},"worksFor":{"@type":"Organization","name":"Aakar Engineering Consultancy Pvt. Ltd."},"knowsAbout":["Structural Engineering","Non-Destructive Testing","Project Controls","BIM","GIS","Infrastructure Analytics","Quantity Surveying"],"sameAs":["https://www.linkedin.com/in/sagar-acharya-s0617/","https://www.youtube.com/@SagarAcharya","https://www.facebook.com/share/1Six47Tr1m/?mibextid=wwXIfr"]}
+{"@context":"https://schema.org","@type":"Person","name":"Sagar Acharya","honorificPrefix":"Er.","jobTitle":"Civil & Structural Engineer","email":"er.sagaracharya@gmail.com","telephone":"+977-9867853747","nationality":"Nepali","image":"PP.jpeg","address":{"@type":"PostalAddress","addressLocality":"Kathmandu","addressCountry":"Nepal"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Himalaya College of Engineering, Tribhuvan University"},"worksFor":{"@type":"Organization","name":"Aakar Engineering Consultancy Pvt. Ltd."},"knowsAbout":["Structural Engineering","Non-Destructive Testing","Project Controls","BIM","GIS","Infrastructure Analytics","Quantity Surveying"],"sameAs":["https://www.linkedin.com/in/sagar-acharya-s0617/","https://www.youtube.com/@SagarAcharya","https://www.facebook.com/share/1Six47Tr1m/?mibextid=wwXIfr"]}
 </script>
 <style>
 :root{--paper:#FBFAF8;--paper-2:#F2F0EA;--ink:#15171C;--graphite:#3A3F47;--muted:#6B7178;--line:rgba(21,23,28,0.13);--line-soft:rgba(21,23,28,0.07);--accent:#1C5B89;--accent-deep:#13456A;--tick:#C2792F;--card:#FFFFFF;--shadow:0 1px 0 rgba(21,23,28,0.04),0 18px 40px -28px rgba(21,23,28,0.30);--font-display:"Archivo",system-ui,sans-serif;--font-body:"Inter",system-ui,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--maxw:1120px;--gut:clamp(20px,5vw,64px);}
@@ -57,6 +58,17 @@ h1.name .ln2{color:var(--graphite);}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
 .cred-chips{display:flex;flex-wrap:wrap;gap:8px;}
 .chip{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--graphite);border:1px solid var(--line);border-radius:5px;padding:6px 11px;background:var(--card);}.chip b{color:var(--accent);}
+.hero-right{display:flex;flex-direction:column;gap:16px;}
+.portrait{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper-2);box-shadow:var(--shadow);}
+.portrait-head{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid var(--line);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--card);}
+.portrait-head .tb-mono-tag{color:var(--tick);}
+.portrait-frame{position:relative;background:#fff;overflow:hidden;}
+.portrait-frame img{width:100%;height:auto;display:block;}
+.portrait-frame::before,.portrait-frame::after{content:"";position:absolute;width:12px;height:12px;border:1.5px solid var(--tick);opacity:.85;pointer-events:none;}
+.portrait-frame::before{top:10px;left:10px;border-right:none;border-bottom:none;}
+.portrait-frame::after{bottom:10px;right:10px;border-left:none;border-top:none;}
+.portrait-foot{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-top:1px solid var(--line);font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--card);}
+.portrait-foot .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:8px;vertical-align:middle;}
 .titleblock{border:1px solid var(--line);background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
 .tb-head{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid var(--line);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}.tb-mono-tag{color:var(--tick);}
 .tb-body{padding:8px 0;}
@@ -198,7 +210,7 @@ footer{position:relative;z-index:1;padding:40px 0;}
 .reveal.in{opacity:1;transform:none;}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr;}.titleblock{max-width:440px;}.about-grid,.two-col,.contact-grid{grid-template-columns:1fr;}.lead-grid{grid-template-columns:1fr;}.stats{grid-template-columns:1fr 1fr;}.stat:nth-child(2){border-right:none;}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line-soft);}nav.links{display:none;}.menu-btn{display:grid;}nav.links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:18px var(--gut);gap:18px;}nav.links.open a.active::after{display:none;}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;}.hero-right{max-width:440px;}.about-grid,.two-col,.contact-grid{grid-template-columns:1fr;}.lead-grid{grid-template-columns:1fr;}.stats{grid-template-columns:1fr 1fr;}.stat:nth-child(2){border-right:none;}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line-soft);}nav.links{display:none;}.menu-btn{display:grid;}nav.links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:18px var(--gut);gap:18px;}nav.links.open a.active::after{display:none;}}
 @media(max-width:620px){.skill-row{grid-template-columns:1fr;}.skill-cat{border-right:none;border-bottom:1px solid var(--line-soft);}.tl-item{grid-template-columns:1fr;gap:8px;}.case{grid-template-columns:1fr;}.case-rail{flex-direction:row;border-right:none;border-bottom:1px solid var(--line);padding:14px 18px;}.case-rail .tag{writing-mode:horizontal-tb;transform:none;}.pub{grid-template-columns:auto 1fr;}.pub-link{grid-column:2;}.stats{grid-template-columns:1fr;}.stat{border-right:none;border-bottom:1px solid var(--line-soft);}.stat:last-child{border-bottom:none;}.visit-header{flex-direction:column;gap:10px;}.visit-flag{font-size:32px;}.lb-btn{width:40px;height:40px;font-size:22px;}}
 </style>
 </head>
@@ -254,18 +266,27 @@ footer{position:relative;z-index:1;padding:40px 0;}
           </a>
         </div>
       </div>
-      <aside class="titleblock reveal">
-        <div class="tb-head"><span>Profile / Title Block</span><span class="tb-mono-tag">A.00</span></div>
-        <div class="tb-body">
-          <div class="tb-row"><span class="k">Discipline</span><span class="v">Civil &amp; Structural</span></div>
-          <div class="tb-row"><span class="k">Registration</span><span class="v">NEC 86274</span></div>
-          <div class="tb-row"><span class="k">Degree</span><span class="v">B.E. Civil, TU</span></div>
-          <div class="tb-row"><span class="k">US equivalency</span><span class="v">Bachelor&rsquo;s (WES)</span></div>
-          <div class="tb-row"><span class="k">Current</span><span class="v">Founder, Aakar Eng.</span></div>
-          <div class="tb-row"><span class="k">Focus</span><span class="v">NDT &middot; Controls &middot; BIM</span></div>
-          <div class="tb-row"><span class="k">Status</span><span class="v" style="color:var(--accent)">Open to collaboration</span></div>
-        </div>
-      </aside>
+      <div class="hero-right reveal">
+        <figure class="portrait">
+          <div class="portrait-head"><span>Portrait</span><span class="tb-mono-tag">SA-00</span></div>
+          <div class="portrait-frame">
+            <img src="PP.jpeg" alt="Sagar Acharya &mdash; Civil &amp; Structural Engineer" loading="eager" width="724" height="1086" />
+          </div>
+          <figcaption class="portrait-foot"><span><span class="dot"></span>Er. Sagar Acharya</span><span>NEC&nbsp;86274</span></figcaption>
+        </figure>
+        <aside class="titleblock">
+          <div class="tb-head"><span>Profile / Title Block</span><span class="tb-mono-tag">A.00</span></div>
+          <div class="tb-body">
+            <div class="tb-row"><span class="k">Discipline</span><span class="v">Civil &amp; Structural</span></div>
+            <div class="tb-row"><span class="k">Registration</span><span class="v">NEC 86274</span></div>
+            <div class="tb-row"><span class="k">Degree</span><span class="v">B.E. Civil, TU</span></div>
+            <div class="tb-row"><span class="k">US equivalency</span><span class="v">Bachelor&rsquo;s (WES)</span></div>
+            <div class="tb-row"><span class="k">Current</span><span class="v">Founder, Aakar Eng.</span></div>
+            <div class="tb-row"><span class="k">Focus</span><span class="v">NDT &middot; Controls &middot; BIM</span></div>
+            <div class="tb-row"><span class="k">Status</span><span class="v" style="color:var(--accent)">Open to collaboration</span></div>
+          </div>
+        </aside>
+      </div>
     </div>
     <div class="stats reveal">
       <div class="stat"><div class="num">2</div><div class="lbl">Peer-reviewed papers</div></div>
