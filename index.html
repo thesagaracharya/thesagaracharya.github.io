@@ -182,6 +182,10 @@ h1.name{font-family:var(--serif);font-weight:600;font-size:clamp(44px,7.2vw,82px
 html[data-theme="dark"] .btn.solid:hover{color:#0C0E10;}
 .btn.ghost{border-color:var(--hair);color:var(--ink);}
 .btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);}
+/* Download-CV button: arrow settles into the tray on hover; PDF tag set in the button's own ink */
+.btn .dl-ico{transition:transform var(--t-fast);}
+.btn:hover .dl-ico{transform:translateY(2px);}
+.btn .btn-tag{font-size:10px;letter-spacing:.08em;border:1px solid color-mix(in srgb,currentColor 35%,transparent);border-radius:4px;padding:1px 6px;opacity:.85;}
 .identity{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:12px;color:var(--ink-2);}
 .identity a{text-decoration:none;color:var(--ink-2);border-bottom:1px solid var(--hair);padding-bottom:1px;transition:color var(--t-fast),border-color var(--t-fast);}
 .identity a:hover{color:var(--accent);border-color:var(--accent);}
@@ -440,6 +444,7 @@ form textarea{resize:vertical;min-height:118px;}
   .reveal{opacity:1;transform:none;transition:none;}
   .gal-tile img,.gal-tile:hover img{transition:none;transform:none;}
   .timeline .track{transition:none;}
+  .btn .dl-ico,.btn:hover .dl-ico{transition:none;transform:none;}
   *{animation-duration:.01ms !important;}
 }
 /* theme change: view-transition crossfade */
@@ -536,7 +541,12 @@ form textarea{resize:vertical;min-height:118px;}
         </dl>
 
         <div class="hero-actions reveal">
-          <a class="btn solid" href="#publications">View publications
+          <a class="btn solid" href="https://drive.google.com/file/d/1TYtNqLBdG-rcEV1LXX92wB2xLwDUMD3X/view?usp=drive_link" target="_blank" rel="noopener" aria-label="Download curriculum vitae as a PDF (opens in a new tab)">
+            <svg class="dl-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v11M6 10l6 6 6-6"/><path d="M4 21h16"/></svg>
+            Download CV
+            <span class="btn-tag">PDF</span>
+          </a>
+          <a class="btn ghost" href="#publications">View publications
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn ghost" href="mailto:er.sagaracharya@gmail.com">er.sagaracharya@gmail.com</a>
         </div>
@@ -1157,6 +1167,7 @@ form textarea{resize:vertical;min-height:118px;}
         <div class="reveal">
           <div class="contact-lines">
             <div class="cline"><span class="k">Email</span><a href="mailto:er.sagaracharya@gmail.com">er.sagaracharya@gmail.com</a></div>
+            <div class="cline"><span class="k">CV</span><a href="https://drive.google.com/file/d/1TYtNqLBdG-rcEV1LXX92wB2xLwDUMD3X/view?usp=drive_link" target="_blank" rel="noopener">Download CV (PDF)</a></div>
             <div class="cline"><span class="k">Phone</span><a href="tel:+9779867853747">+977 9867853747</a></div>
             <div class="cline"><span class="k">Practice</span><span class="v">Aakar Engineering Consultancy</span></div>
             <div class="cline"><span class="k">Based in</span><span class="v">Kathmandu, Nepal</span></div>
@@ -1187,6 +1198,7 @@ form textarea{resize:vertical;min-height:118px;}
     <div class="foot-links">
       <a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a>
       <a href="#gallery">Fieldwork</a><a href="#visits">Visits</a><a href="#leadership">Leadership</a>
+      <a href="https://drive.google.com/file/d/1TYtNqLBdG-rcEV1LXX92wB2xLwDUMD3X/view?usp=drive_link" target="_blank" rel="noopener">Download CV</a>
     </div>
   </div>
 </footer>
@@ -1204,7 +1216,7 @@ form textarea{resize:vertical;min-height:118px;}
   <div class="cmdk" role="dialog" aria-modal="true" aria-label="Command menu">
     <div class="cmdk-input">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="cmdkInput" type="text" placeholder="Go to a section, cite a paper, switch theme&hellip;" role="combobox" aria-expanded="true" aria-controls="cmdkList" aria-autocomplete="list" autocomplete="off" />
+      <input id="cmdkInput" type="text" placeholder="Go to a section, cite a paper, download the CV&hellip;" role="combobox" aria-expanded="true" aria-controls="cmdkList" aria-autocomplete="list" autocomplete="off" />
     </div>
     <div class="cmdk-list" id="cmdkList" role="listbox" aria-label="Commands"></div>
     <div class="cmdk-foot"><span><kbd>&uarr;&darr;</kbd> navigate</span><span><kbd>&#9166;</kbd> select</span><span><kbd>esc</kbd> close</span></div>
@@ -1243,6 +1255,11 @@ form textarea{resize:vertical;min-height:118px;}
    4) Citations  5) Command palette  6) Gallery  7) Visits
    8) Lightbox  9) Contact form
    ============================================================ */
+
+/* Canonical CV download URL — update in ONE place if the file moves.
+   (The three HTML anchors — hero button, contact line, footer — carry the
+   same URL literally so the links work even before scripts run.) */
+var CV_URL="https://drive.google.com/file/d/1TYtNqLBdG-rcEV1LXX92wB2xLwDUMD3X/view?usp=drive_link";
 
 /* ---------- 1 · Theme (with animated view transition) ---------- */
 (function(){
@@ -1488,6 +1505,7 @@ form textarea{resize:vertical;min-height:118px;}
     {g:"Publications",label:"Open DOI 10.3126/injet.v1i2.66695",hint:"doi.org",run:function(){close();window.open("https://doi.org/10.3126/injet.v1i2.66695","_blank","noopener");}},
     {g:"Publications",label:"Open DOI 10.3126/injet.v1i2.66688",hint:"doi.org",run:function(){close();window.open("https://doi.org/10.3126/injet.v1i2.66688","_blank","noopener");}},
     {g:"Publications",label:"Research proposal: self-calibrating cross-code NDT framework",hint:"PDF",run:function(){close();window.open("research-proposal-fire-ndt.pdf","_blank","noopener");}},
+    {g:"Actions",label:"Download CV",hint:"PDF",run:function(){close();window.open(CV_URL,"_blank","noopener");}},
     {g:"Actions",label:"Toggle dark / light theme",hint:"appearance",run:function(){close();window.SAToggleTheme();}},
     {g:"Actions",label:"Copy email address",hint:"er.sagaracharya@gmail.com",run:function(){
       close();
